@@ -162,23 +162,8 @@ def post_to_x(caption: str, image_path: str | None = None) -> None:
         access_token_secret=os.environ["X_ACCESS_SECRET"],
     )
 
-    media_id = None
-    if image_path and os.path.exists(image_path):
-        # 画像アップロードはv1.1 API
-        auth = tweepy.OAuth1UserHandler(
-            os.environ["X_API_KEY"],
-            os.environ["X_API_SECRET"],
-            os.environ["X_ACCESS_TOKEN"],
-            os.environ["X_ACCESS_SECRET"],
-        )
-        api_v1 = tweepy.API(auth)
-        media = api_v1.media_upload(filename=image_path)
-        media_id = media.media_id
-
-    client_v2.create_tweet(
-        text=caption,
-        media_ids=[media_id] if media_id else None,
-    )
+    # テキストのみ投稿（画像アップロードはv1.1 APIが必要なため一旦スキップ）
+    client_v2.create_tweet(text=caption)
 
 
 def main():
