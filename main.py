@@ -13,7 +13,7 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 
-import google.generativeai as genai
+from google import genai
 import tweepy
 
 from infographic import create_infographic
@@ -101,8 +101,7 @@ def select_and_generate(items: list[dict]) -> dict:
     - 日本語キャプション生成
     - 図解テキスト生成（必要な場合）
     """
-    genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
     articles_text = "\n\n".join(
         f"[{i+1}] {item['title']}\n{item['summary']}\n配信: {item['published']}"
@@ -138,7 +137,9 @@ def select_and_generate(items: list[dict]) -> dict:
 
 needs_infographicは、数字・比較・フロー・変化を図解できる場合のみtrue。単なるニュースはfalse。"""
 
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(
+        model="gemini-2.0-flash", contents=prompt
+    )
     raw = response.text.strip()
 
     # JSON部分だけ抽出（```json ... ``` に包まれている場合も対応）
