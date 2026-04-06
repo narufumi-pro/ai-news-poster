@@ -1,0 +1,39 @@
+name: AI News Auto-Poster
+
+on:
+  schedule:
+    # 日本時間 9時・15時・21時（UTC 0・6・12時）に実行
+    - cron: "0 0,6,12 * * *"
+  workflow_dispatch: # 手動実行も可能
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: for-freelance/sns/ai-poster/requirements.txt
+
+      - name: Install Japanese fonts
+        run: sudo apt-get install -y fonts-noto-cjk
+
+      - name: Install dependencies
+        run: pip install -r for-freelance/sns/ai-poster/requirements.txt
+
+      - name: Run AI News Poster
+        working-directory: for-freelance/sns/ai-poster
+        run: python main.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
