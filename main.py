@@ -13,7 +13,7 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 
-from google import genai
+from groq import Groq
 import tweepy
 
 from infographic import create_infographic
@@ -101,7 +101,7 @@ def select_and_generate(items: list[dict]) -> dict:
     - 日本語キャプション生成
     - 図解テキスト生成（必要な場合）
     """
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
     articles_text = "\n\n".join(
         f"[{i+1}] {item['title']}\n{item['summary']}\n配信: {item['published']}"
@@ -137,10 +137,12 @@ def select_and_generate(items: list[dict]) -> dict:
 
 needs_infographicは、数字・比較・フロー・変化を図解できる場合のみtrue。単なるニュースはfalse。"""
 
-    response = client.models.generate_content(
-        model="gemini-2.0-flash-lite", contents=prompt
+    response = client.chat.completions.create(
+        model="llama-3.1-8b-instant",
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=800,
     )
-    raw = response.text.strip()
+    raw = response.choices[0].message.content.strip()
 
     # JSON部分だけ抽出（```json ... ``` に包まれている場合も対応）
     if "```" in raw:
