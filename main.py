@@ -138,7 +138,7 @@ def select_and_generate(items: list[dict]) -> dict:
 needs_infographicは、数字・比較・フロー・変化を図解できる場合のみtrue。単なるニュースはfalse。"""
 
     response = client.models.generate_content(
-        model="gemini-2.0-flash", contents=prompt
+        model="gemini-2.0-flash-lite", contents=prompt
     )
     raw = response.text.strip()
 
