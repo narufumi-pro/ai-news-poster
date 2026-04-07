@@ -1,9 +1,9 @@
 """
-AI News Auto-Poster for @AI_builderkun
+AI News Content Generator for @AI_builderkun
 - RSSから24時間以内のAIニュースを取得
-- Google Gemini Flash（無料枠：1日1,500回）で選定 + 投稿文生成
+- Groq（無料枠）で選定 + 投稿文生成
 - Pillowで図解画像を生成（無料）
-- TweepyでXに自動投稿
+- daily-content/ にJSONと画像を保存（手動投稿用）
 全て無料で動作
 """
 
@@ -11,10 +11,11 @@ import feedparser
 import json
 import os
 import sys
+import urllib.request
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 from groq import Groq
-import tweepy
 
 from infographic import create_infographic
 
@@ -96,10 +97,10 @@ def fetch_news() -> list[dict]:
 
 def select_and_generate(items: list[dict]) -> dict:
     """
-    Google Gemini Flash（無料枠）を1回だけ呼び出し：
+    Groq（無料枠）を1回だけ呼び出し：
     - 最もバズりそうな記事を選定
     - 日本語キャプション生成
-    - 図解テキスト生成（必要な場合）
+    - テンプレート選択 + 図解テキスト生成
     """
     client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
@@ -118,29 +119,53 @@ def select_and_generate(items: list[dict]) -> dict:
 - 「AIで〇〇作ってみた」系の個人投稿は選ばない
 - 数字・比較・驚き・ビジネスインパクトがあるものを優先
 
+【テンプレート選択ルール】
+- stat:       インパクトある数字・記録・スペックがある場合
+- list:       5つの特徴・変化・ポイントをまとめる場合
+- comparison: 2つのモデル・サービス・手法を比較する場合
+- ranking:    上位N位形式で整理できる場合（ベンチマーク・シェア等）
+
 【出力】必ず以下のJSONのみ返してください（説明文不要）:
 {{
   "selected_index": <1始まりの番号>,
-  "caption": "<日本語X投稿文。インパクトある冒頭＋内容＋ハッシュタグ。270字以内>",
+  "caption": "<日本語X投稿文。インパクトある冒頭＋内容＋ハッシュタグ3個以内。270字以内>",
   "needs_infographic": <true または false>,
   "infographic": {{
-    "title": "<図解タイトル 15字以内>",
+    "template": "<stat | list | comparison | ranking>",
+    "title": "<図解タイトル 18字以内>",
+    "conclusion": "<まとめ一文 35字以内>",
+
+    // template=stat の場合のみ
     "key_stat": "<最もインパクトある数字や事実 25字以内>",
-    "points": [
-      "<ポイント1 30字以内>",
-      "<ポイント2 30字以内>",
-      "<ポイント3 30字以内>"
-    ],
-    "conclusion": "<まとめ一文 35字以内>"
+    "points": ["<30字以内>", "<30字以内>", "<30字以内>"],
+
+    // template=list の場合のみ
+    "points": ["<35字以内>", "<35字以内>", "<35字以内>", "<35字以内>", "<35字以内>"],
+
+    // template=comparison の場合のみ
+    "left_label": "<比較対象A 10字以内>",
+    "right_label": "<比較対象B 10字以内>",
+    "left_points": ["<25字以内>", "<25字以内>", "<25字以内>"],
+    "right_points": ["<25字以内>", "<25字以内>", "<25字以内>"],
+
+    // template=ranking の場合のみ
+    "items": [
+      {{"name": "<名前 12字以内>", "desc": "<説明 28字以内>"}},
+      {{"name": "<名前 12字以内>", "desc": "<説明 28字以内>"}},
+      {{"name": "<名前 12字以内>", "desc": "<説明 28字以内>"}},
+      {{"name": "<名前 12字以内>", "desc": "<説明 28字以内>"}},
+      {{"name": "<名前 12字以内>", "desc": "<説明 28字以内>"}}
+    ]
   }}
 }}
 
-needs_infographicは、数字・比較・フロー・変化を図解できる場合のみtrue。単なるニュースはfalse。"""
+needs_infographicはtrue推奨。図解にしにくい単純なニュースのみfalse。
+使わないキーは出力に含めないこと。"""
 
     response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
+        model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=800,
+        max_tokens=1200,
     )
     raw = response.choices[0].message.content.strip()
 
@@ -152,22 +177,78 @@ needs_infographicは、数字・比較・フロー・変化を図解できる場
     return json.loads(raw)
 
 
-def post_to_x(caption: str, image_path: str | None = None) -> None:
-    """X APIv2でツイート（画像あり/なし）"""
-    # v2 クライアント（テキスト投稿）
-    client_v2 = tweepy.Client(
-        consumer_key=os.environ["X_API_KEY"],
-        consumer_secret=os.environ["X_API_SECRET"],
-        access_token=os.environ["X_ACCESS_TOKEN"],
-        access_token_secret=os.environ["X_ACCESS_SECRET"],
-    )
+def save_content(caption: str, infographic_data: dict | None, source_url: str, image_path: str | None) -> str:
+    """daily-content/ にJSON + 画像を保存して投稿準備完了状態にする"""
+    today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    output_dir = Path("daily-content")
+    output_dir.mkdir(exist_ok=True)
 
-    # テキストのみ投稿（画像アップロードはv1.1 APIが必要なため一旦スキップ）
-    client_v2.create_tweet(text=caption)
+    # 画像をdaily-contentに移動
+    final_image_path = None
+    if image_path and Path(image_path).exists():
+        final_image_path = str(output_dir / f"{today}.png")
+        Path(image_path).rename(final_image_path)
+
+    # JSON保存
+    content = {
+        "date": today,
+        "caption": caption,
+        "image": final_image_path,
+        "source_url": source_url,
+        "infographic_data": infographic_data,
+        "status": "ready",  # 手動投稿待ち
+    }
+    json_path = output_dir / f"{today}.json"
+    json_path.write_text(json.dumps(content, ensure_ascii=False, indent=2))
+
+    return str(json_path)
+
+
+def notify_slack(caption: str, source_url: str, image_url: str | None, today: str) -> None:
+    """Slack Incoming Webhook で投稿候補を通知する"""
+    webhook_url = os.environ.get("SLACK_WEBHOOK_URL")
+    if not webhook_url:
+        print("SLACK_WEBHOOK_URL 未設定 → Slack通知スキップ")
+        return
+
+    blocks = [
+        {
+            "type": "header",
+            "text": {"type": "plain_text", "text": f"📅 {today} の投稿候補が届きました"}
+        },
+        {
+            "type": "section",
+            "text": {"type": "mrkdwn", "text": f"*投稿文*\n{caption}"}
+        },
+        {
+            "type": "section",
+            "text": {"type": "mrkdwn", "text": f"*元記事*\n{source_url}"}
+        },
+    ]
+
+    if image_url:
+        blocks.append({
+            "type": "image",
+            "image_url": image_url,
+            "alt_text": "図解画像"
+        })
+
+    blocks.append({
+        "type": "context",
+        "elements": [{"type": "mrkdwn", "text": "✅ 確認後、Xに手動投稿してください"}]
+    })
+
+    payload = json.dumps({"blocks": blocks}).encode("utf-8")
+    req = urllib.request.Request(
+        webhook_url,
+        data=payload,
+        headers={"Content-Type": "application/json"},
+    )
+    urllib.request.urlopen(req)
 
 
 def main():
-    print("=== AI News Auto-Poster 起動 ===")
+    print("=== AI News Content Generator 起動 ===")
 
     # 1. ニュース収集
     items = fetch_news()
@@ -176,7 +257,7 @@ def main():
         sys.exit(0)
     print(f"取得: {len(items)}件")
 
-    # 2. Gemini Flash で選定 & コンテンツ生成（1回のみ・無料）
+    # 2. Groq で選定 & コンテンツ生成（1回のみ・無料）
     result = select_and_generate(items)
     idx = result["selected_index"] - 1
     selected = items[idx] if 0 <= idx < len(items) else items[0]
@@ -190,9 +271,26 @@ def main():
         create_infographic(result["infographic"], image_path)
         print("図解生成: 完了")
 
-    # 4. X に投稿
-    post_to_x(result["caption"], image_path)
-    print("Xへの投稿: 完了")
+    # 4. daily-content/ に保存
+    today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    json_path = save_content(
+        caption=result["caption"],
+        infographic_data=result.get("infographic"),
+        source_url=selected["url"],
+        image_path=image_path,
+    )
+    print(f"保存完了: {json_path}")
+
+    # 5. Slack通知（画像はGitHub上のURLで参照）
+    repo = os.environ.get("GITHUB_REPOSITORY", "narufumi-pro/ai-news-poster")
+    image_url = f"https://raw.githubusercontent.com/{repo}/main/daily-content/{today}.png" if image_path else None
+    notify_slack(
+        caption=result["caption"],
+        source_url=selected["url"],
+        image_url=image_url,
+        today=today,
+    )
+    print("Slack通知: 完了")
 
 
 if __name__ == "__main__":
