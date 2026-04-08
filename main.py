@@ -11,7 +11,6 @@ import feedparser
 import json
 import os
 import sys
-import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -204,49 +203,6 @@ def save_content(caption: str, infographic_data: dict | None, source_url: str, i
     return str(json_path)
 
 
-def notify_slack(caption: str, source_url: str, image_url: str | None, today: str) -> None:
-    """Slack Incoming Webhook で投稿候補を通知する"""
-    webhook_url = os.environ.get("SLACK_WEBHOOK_URL")
-    if not webhook_url:
-        print("SLACK_WEBHOOK_URL 未設定 → Slack通知スキップ")
-        return
-
-    blocks = [
-        {
-            "type": "header",
-            "text": {"type": "plain_text", "text": f"📅 {today} の投稿候補が届きました"}
-        },
-        {
-            "type": "section",
-            "text": {"type": "mrkdwn", "text": f"*投稿文*\n{caption}"}
-        },
-        {
-            "type": "section",
-            "text": {"type": "mrkdwn", "text": f"*元記事*\n{source_url}"}
-        },
-    ]
-
-    if image_url:
-        blocks.append({
-            "type": "image",
-            "image_url": image_url,
-            "alt_text": "図解画像"
-        })
-
-    blocks.append({
-        "type": "context",
-        "elements": [{"type": "mrkdwn", "text": "✅ 確認後、Xに手動投稿してください"}]
-    })
-
-    payload = json.dumps({"blocks": blocks}).encode("utf-8")
-    req = urllib.request.Request(
-        webhook_url,
-        data=payload,
-        headers={"Content-Type": "application/json"},
-    )
-    urllib.request.urlopen(req)
-
-
 def main():
     print("=== AI News Content Generator 起動 ===")
 
@@ -280,17 +236,7 @@ def main():
         image_path=image_path,
     )
     print(f"保存完了: {json_path}")
-
-    # 5. Slack通知（画像はGitHub上のURLで参照）
-    repo = os.environ.get("GITHUB_REPOSITORY", "narufumi-pro/ai-news-poster")
-    image_url = f"https://raw.githubusercontent.com/{repo}/main/daily-content/{today}.png" if image_path else None
-    notify_slack(
-        caption=result["caption"],
-        source_url=selected["url"],
-        image_url=image_url,
-        today=today,
-    )
-    print("Slack通知: 完了")
+    print(f"CONTENT_DATE={today}")  # ワークフローで参照用
 
 
 if __name__ == "__main__":

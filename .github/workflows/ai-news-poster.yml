@@ -34,14 +34,53 @@ jobs:
         run: python main.py
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: Commit and push daily-content
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add daily-content/
-          # 変更がなければスキップ（冪等性）
           git diff --cached --quiet && echo "変更なし" && exit 0
           git commit -m "content: $(date +'%Y-%m-%d') の投稿コンテンツを生成"
           git push
+
+      - name: Notify Slack
+        run: |
+          TODAY=$(TZ=Asia/Tokyo date '+%Y-%m-%d')
+          JSON_FILE="daily-content/${TODAY}.json"
+
+          if [ ! -f "$JSON_FILE" ]; then
+            echo "JSONファイルが見つかりません: $JSON_FILE"
+            exit 0
+          fi
+
+          CAPTION=$(python3 -c "import json,sys; d=json.load(open('$JSON_FILE')); print(d['caption'])")
+          SOURCE_URL=$(python3 -c "import json,sys; d=json.load(open('$JSON_FILE')); print(d.get('source_url',''))")
+          HAS_IMAGE=$(python3 -c "import json,sys; d=json.load(open('$JSON_FILE')); print('yes' if d.get('image') else 'no')")
+          IMAGE_URL="https://raw.githubusercontent.com/${{ github.repository }}/main/daily-content/${TODAY}.png"
+
+          # Slackメッセージ組み立て
+          PAYLOAD=$(python3 -c "
+          import json, sys
+          caption = sys.argv[1]
+          source_url = sys.argv[2]
+          has_image = sys.argv[3]
+          image_url = sys.argv[4]
+          today = sys.argv[5]
+
+          blocks = [
+            {'type': 'header', 'text': {'type': 'plain_text', 'text': f'{today} の投稿候補'}},
+            {'type': 'section', 'text': {'type': 'mrkdwn', 'text': '*投稿文*\n' + caption}},
+            {'type': 'section', 'text': {'type': 'mrkdwn', 'text': '*元記事*\n' + source_url}},
+          ]
+          if has_image == 'yes':
+            blocks.append({'type': 'image', 'image_url': image_url, 'alt_text': '図解画像'})
+          blocks.append({'type': 'context', 'elements': [{'type': 'mrkdwn', 'text': '確認後、Xに手動投稿してください'}]})
+          print(json.dumps({'blocks': blocks}))
+          " "$CAPTION" "$SOURCE_URL" "$HAS_IMAGE" "$IMAGE_URL" "$TODAY")
+
+          curl -s -X POST "$SLACK_WEBHOOK_URL" \
+            -H 'Content-Type: application/json' \
+            -d "$PAYLOAD"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
