@@ -1,0 +1,18 @@
+{
+  "date": "2026-04-09",
+  "caption": "Metaが新しいAIモデルMuse Sparkを発表！従来のAI技術を刷新する「地ならし」のプロジェクトに着手。Meta CEOのマーク・ザッカーバーグが期待を寄せるこの試みが、OpenAIのChatGPTやAnthropicのClaudeに挑むのか？#Meta #MuseSpark #AI",
+  "image": "daily-content/2026-04-09.png",
+  "source_url": "https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Muse Spark",
+    "conclusion": "MetaのAI技術刷新",
+    "key_stat": "14.3億ドル投資",
+    "points": [
+      "Muse SparkはMeta Superintelligence Labsから誕生",
+      "Contemplatingモードで複雑な問題に挑戦",
+      "多くのAIエージェントを活用して高速化を実現"
+    ]
+  },
+  "status": "ready"
+}
