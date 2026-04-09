@@ -93,27 +93,53 @@ def _new_canvas() -> tuple[Image.Image, ImageDraw.Draw]:
 
 def _create_stat(data: dict, output_path: str):
     """
-    data keys: title, key_stat, points(list[str] 最大3), conclusion
+    data keys: title, key_stat, points(list[str] 最大5), conclusion
+
+    情報設計:
+      points[0] = 何か（定義）
+      points[1] = 何ができるか（機能）
+      points[2] = なぜ重要か（意義）
+      points[3] = 規模感・数字の補足
+      points[4] = 競合・比較・背景
     """
     img, draw = _new_canvas()
     _draw_header(draw, data.get("title", ""))
 
-    draw.text((W // 2, 100), data.get("title", ""), font=_get_font(36, bold=True), fill=WHITE, anchor="mm")
+    # タイトル
+    draw.text((W // 2, 90), data.get("title", ""), font=_get_font(32, bold=True), fill=WHITE, anchor="mm")
 
-    # キースタット
-    _draw_rounded_rect(draw, [160, 128, W - 160, 248], radius=16, fill=BG_PANEL)
-    draw.rectangle([160, 128, 168, 248], fill=ACCENT)
-    draw.text((W // 2, 188), data.get("key_stat", ""), font=_get_font(64, bold=True), fill=ACCENT, anchor="mm")
+    # キースタットパネル（コンパクト化）
+    _draw_rounded_rect(draw, [120, 104, W - 120, 196], radius=14, fill=BG_PANEL)
+    draw.rectangle([120, 104, 130, 196], fill=ACCENT)
+    draw.text((W // 2, 150), data.get("key_stat", ""), font=_get_font(54, bold=True), fill=ACCENT, anchor="mm")
 
-    # ポイント3項目
-    points = (data.get("points") or [])[:3]
+    # ポイント（最大5項目・2行折り返し対応）
+    points = (data.get("points") or [])[:5]
+    n = len(points)
+    start_y = 202
+    footer_y = H - 68
+    available = footer_y - start_y - 4
+    item_h = min(78, available // max(n, 1))
+
     for i, point in enumerate(points):
-        y = 278 + i * 88
-        _draw_rounded_rect(draw, [60, y, W - 60, y + 70], radius=12, fill=BG_PANEL)
+        y = start_y + i * item_h
+        panel_h = item_h - 4
+
+        _draw_rounded_rect(draw, [50, y, W - 50, y + panel_h], radius=10, fill=BG_PANEL)
+
+        # バッジ
         dot_color = DOT_COLORS[i % len(DOT_COLORS)]
-        draw.ellipse([80, y + 18, 112, y + 50], fill=dot_color)
-        draw.text((96, y + 34), str(i + 1), font=_get_font(20, bold=True), fill=BG_DARK, anchor="mm")
-        draw.text((138, y + 34), textwrap.shorten(point, width=38, placeholder="…"), font=_get_font(28), fill=WHITE, anchor="lm")
+        cy = y + panel_h // 2
+        draw.ellipse([68, cy - 20, 108, cy + 20], fill=dot_color)
+        draw.text((88, cy), str(i + 1), font=_get_font(20, bold=True), fill=BG_DARK, anchor="mm")
+
+        # テキスト（2行まで折り返し）
+        lines = textwrap.wrap(point, width=32)[:2]
+        if len(lines) == 1:
+            draw.text((128, cy), lines[0], font=_get_font(26), fill=WHITE, anchor="lm")
+        else:
+            draw.text((128, cy - 15), lines[0], font=_get_font(24), fill=WHITE, anchor="lm")
+            draw.text((128, cy + 15), lines[1], font=_get_font(24), fill=WHITE, anchor="lm")
 
     _draw_footer(draw, data.get("conclusion", ""))
     img.save(output_path, format="PNG", optimize=True)
