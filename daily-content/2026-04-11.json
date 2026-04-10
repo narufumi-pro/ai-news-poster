@@ -1,0 +1,19 @@
+{
+  "date": "2026-04-11",
+  "caption": "RSAC 2026の基調講演でAIのセキュリティが注目された。ゼロトラストの重要性やAIのガバナンスが強調された。#AI #セキュリティ #RSAC2026",
+  "image": "daily-content/2026-04-11.png",
+  "source_url": "https://venturebeat.com/security/ai-agent-zero-trust-architecture-audit-credential-isolation-anthropic-nvidia-nemoclaw",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIセキュリティの重要性",
+    "conclusion": "AIのセキュリティに対応するためにゼロトラストとガバナンスが必要",
+    "points": [
+      "ゼロトラストの重要性",
+      "AIのガバナンスの必要性",
+      "アクセス制御からアクション制御へのシフト",
+      "AIエージェントの脆弱性",
+      "企業技術におけるAIガバナンスのギャップ"
+    ]
+  },
+  "status": "ready"
+}
