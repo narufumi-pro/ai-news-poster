@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-12",
+  "caption": "Nvidiaが支援するSiFive、オープンAIチップで365億ドルに達成！AIデータセンターの時代に注目",
+  "image": "daily-content/2026-04-12.png",
+  "source_url": "https://techcrunch.com/2026/04/11/nvidia-backed-sifive-hits-3-65-billion-valuation-for-open-ai-chips/",
+  "infographic_data": {
+    "template": "stat",
+    "title": "SiFiveのオープンAIチップ",
+    "conclusion": "オープンAIチップの未来が始まる",
+    "key_stat": "365億ドルの評価",
+    "points": [
+      "SiFive：オープンAIチップの開発企業",
+      "RISC-V：オープンソースのチップ設計",
+      "Nvidiaの支援：AIデータセンタへの応用",
+      "400万ドルの資金調達：大手投資家の参入",
+      "AIの未来：オープンソースとAIの融合"
+    ]
+  },
+  "status": "ready"
+}
