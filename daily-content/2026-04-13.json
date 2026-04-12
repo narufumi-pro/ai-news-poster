@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-13",
+  "caption": "Xがクリックベイトアカウントへの支払いを削減。実質的な創造性のあるコンテンツへのフォーカスへシフト。#X #クリックベイト #コンテンツ",
+  "image": "daily-content/2026-04-13.png",
+  "source_url": "https://techcrunch.com/2026/04/12/x-says-its-reducing-payments-to-clickbait-accounts/",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Xのクリックベイト対策",
+    "conclusion": "クリックベイト排除でコンテンツの質向上",
+    "key_stat": "60%の支払い削減",
+    "points": [
+      "クリックベイトとは：低質なコンテンツでユーザーを欺く手法",
+      "クリックベイトの問題：本物の創造性を損なう",
+      "Xの対策：クリックベイトアカウントへの支払い削減",
+      "対象アカウント：『🚨BREAKING』を頻繁に使用するアカウント",
+      "今後の展開：高質なコンテンツへのフォーカス強化"
+    ]
+  },
+  "status": "ready"
+}
