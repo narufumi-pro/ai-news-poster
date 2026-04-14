@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-15",
+  "caption": "🔥 中国のAI技術が進化。DeepSeekやSeeDance 2.0が登場",
+  "image": "daily-content/2026-04-15.png",
+  "source_url": "https://www.youtube.com/watch?v=MIudp4xv7Io",
+  "infographic_data": {
+    "template": "stat",
+    "title": "中国AIの突然の優位性",
+    "conclusion": "中国のAI技術が急速に進化",
+    "key_stat": "中国のAI技術が世界をリード",
+    "points": [
+      "中国のAI技術：中国が世界で最も先進的なAI技術を開発",
+      "DeepSeek：画像認識などを実現するAIモデルの1つ",
+      "SeeDance 2.0：人工知能を利用したダンスの生成",
+      "中国のAI市場：世界最大級の市場規模",
+      "中国のAI研究：世界のトップレベルの研究機関"
+    ]
+  },
+  "status": "ready"
+}
