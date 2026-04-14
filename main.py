@@ -12,6 +12,7 @@ AI News Content Generator for @AI_builderkun
 import feedparser
 import json
 import os
+import re
 import sys
 import urllib.parse
 import urllib.request
@@ -334,11 +335,18 @@ def generate_content(item: dict, body: str, client: Groq) -> dict:
     )
     raw = response.choices[0].message.content.strip()
 
+    # コードブロック除去
     if "```" in raw:
         raw = raw.split("```")[1]
         if raw.startswith("json"):
             raw = raw[4:]
-    return json.loads(raw)
+        raw = raw.strip()
+
+    # JSONオブジェクトを正規表現で抽出（余分なテキストがあっても安全に取り出す）
+    match = re.search(r'\{.*\}', raw, re.DOTALL)
+    if not match:
+        raise ValueError(f"JSONが見つかりません: {raw[:200]}")
+    return json.loads(match.group())
 
 
 # ──────────────────────────────────────────────
