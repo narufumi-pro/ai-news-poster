@@ -1,18 +1,19 @@
 """
 AI News Content Generator for @AI_builderkun
-- RSSから24時間以内のAIニュースを取得
-- Groq①: 最良記事の選定（タイトル+要約）
-- 元記事URLから本文を取得（stdlib urllib）
-- Groq②: 本文を読んで図解+投稿文を生成
+- YouTube Data API で直近3日のAI動画を取得（言語不問・海外動画含む）
+- Groq①: 最良動画の選定
+- Groq②: 動画内容を日本語で要点まとめ + 図解生成
 - Pillowで図解画像を生成（無料）
 - daily-content/ にJSONと画像を保存（手動投稿用）
-全て無料で動作
+- YouTubeが取得できない場合はRSSにフォールバック
+全て無料〜低コストで動作
 """
 
 import feedparser
 import json
 import os
 import sys
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
@@ -23,9 +24,74 @@ from groq import Groq
 from infographic import create_infographic
 
 # ──────────────────────────────────────────────
-# ニュースソース（RSSフィード）
+# YouTube 検索設定
 # ──────────────────────────────────────────────
-NEWS_SOURCES = [
+
+YOUTUBE_SEARCH_QUERIES = [
+    "AI artificial intelligence breakthrough",
+    "ChatGPT Claude Gemini new feature",
+    "LLM large language model 2025",
+    "OpenAI Anthropic Google AI announcement",
+    "AI agent automation 2025",
+]
+
+YOUTUBE_API_BASE = "https://www.googleapis.com/youtube/v3"
+
+
+def fetch_youtube_videos(api_key: str, days: int = 3) -> list[dict]:
+    """直近N日のAI関連YouTube動画を取得（言語不問）"""
+    published_after = (datetime.now(timezone.utc) - timedelta(days=days)).strftime(
+        "%Y-%m-%dT%H:%M:%SZ"
+    )
+
+    seen_ids = set()
+    videos = []
+
+    for query in YOUTUBE_SEARCH_QUERIES:
+        params = urllib.parse.urlencode({
+            "part": "snippet",
+            "q": query,
+            "type": "video",
+            "publishedAfter": published_after,
+            "maxResults": 5,
+            "order": "relevance",
+            "key": api_key,
+        })
+        url = f"{YOUTUBE_API_BASE}/search?{params}"
+
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "AI-News-Bot/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+        except Exception as e:
+            print(f"YouTube検索失敗 ({query}): {e}")
+            continue
+
+        for item in data.get("items", []):
+            video_id = item["id"].get("videoId", "")
+            if not video_id or video_id in seen_ids:
+                continue
+            seen_ids.add(video_id)
+
+            snippet = item["snippet"]
+            videos.append({
+                "title": snippet.get("title", ""),
+                "summary": snippet.get("description", "")[:600],
+                "url": f"https://www.youtube.com/watch?v={video_id}",
+                "channel": snippet.get("channelTitle", ""),
+                "published": snippet.get("publishedAt", ""),
+                "source": "youtube",
+            })
+
+    print(f"YouTube動画取得: {len(videos)}件")
+    return videos
+
+
+# ──────────────────────────────────────────────
+# RSSフォールバック
+# ──────────────────────────────────────────────
+
+RSS_SOURCES = [
     "https://techcrunch.com/feed/",
     "https://venturebeat.com/feed/",
     "https://www.theverge.com/rss/index.xml",
@@ -50,67 +116,12 @@ KEYWORDS_EXCLUDE = [
 ]
 
 
-# ──────────────────────────────────────────────
-# HTML本文抽出（外部ライブラリ不要）
-# ──────────────────────────────────────────────
-
-class _TextExtractor(HTMLParser):
-    """HTMLからテキストだけを取り出すパーサー"""
-    SKIP_TAGS = {"script", "style", "nav", "header", "footer", "aside", "noscript"}
-
-    def __init__(self):
-        super().__init__()
-        self._skip_depth = 0
-        self.chunks: list[str] = []
-
-    def handle_starttag(self, tag, attrs):
-        if tag in self.SKIP_TAGS:
-            self._skip_depth += 1
-
-    def handle_endtag(self, tag):
-        if tag in self.SKIP_TAGS and self._skip_depth > 0:
-            self._skip_depth -= 1
-
-    def handle_data(self, data):
-        if self._skip_depth == 0:
-            s = data.strip()
-            if len(s) > 20:  # 短すぎる断片は除外
-                self.chunks.append(s)
-
-
-def fetch_article_body(url: str, max_chars: int = 4000) -> str:
-    """記事URLから本文テキストを取得（最大max_chars文字）"""
-    try:
-        req = urllib.request.Request(
-            url,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; AI-News-Bot/1.0)"},
-        )
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            html = resp.read().decode("utf-8", errors="ignore")
-
-        parser = _TextExtractor()
-        parser.feed(html)
-        text = " ".join(parser.chunks)
-
-        # 空白を整理して返す
-        text = " ".join(text.split())
-        return text[:max_chars]
-
-    except Exception as e:
-        print(f"記事取得失敗 ({url}): {e}")
-        return ""
-
-
-# ──────────────────────────────────────────────
-# RSSニュース収集
-# ──────────────────────────────────────────────
-
-def fetch_news() -> list[dict]:
-    """24時間以内のAI関連ニュースをRSSから収集"""
+def fetch_rss_news() -> list[dict]:
+    """24時間以内のAI関連ニュースをRSSから収集（フォールバック用）"""
     cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
     items = []
 
-    for url in NEWS_SOURCES:
+    for url in RSS_SOURCES:
         try:
             feed = feedparser.parse(url)
         except Exception:
@@ -138,6 +149,7 @@ def fetch_news() -> list[dict]:
                 "summary": summary,
                 "url": entry.get("link", ""),
                 "published": pub_dt.strftime("%Y-%m-%d %H:%M UTC"),
+                "source": "rss",
             })
 
     seen = set()
@@ -151,25 +163,74 @@ def fetch_news() -> list[dict]:
 
 
 # ──────────────────────────────────────────────
-# Groq呼び出し①: 記事選定のみ（軽量）
+# HTML本文抽出（RSSフォールバック用）
 # ──────────────────────────────────────────────
 
-def select_article(items: list[dict], client: Groq) -> int:
-    """12件のタイトル+要約を渡して最良の1件のインデックスを返す"""
-    articles_text = "\n".join(
-        f"[{i+1}] {item['title']} ({item['published']})"
+class _TextExtractor(HTMLParser):
+    SKIP_TAGS = {"script", "style", "nav", "header", "footer", "aside", "noscript"}
+
+    def __init__(self):
+        super().__init__()
+        self._skip_depth = 0
+        self.chunks: list[str] = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.SKIP_TAGS:
+            self._skip_depth += 1
+
+    def handle_endtag(self, tag):
+        if tag in self.SKIP_TAGS and self._skip_depth > 0:
+            self._skip_depth -= 1
+
+    def handle_data(self, data):
+        if self._skip_depth == 0:
+            s = data.strip()
+            if len(s) > 20:
+                self.chunks.append(s)
+
+
+def fetch_article_body(url: str, max_chars: int = 4000) -> str:
+    """記事URLから本文テキストを取得"""
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; AI-News-Bot/1.0)"},
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+
+        parser = _TextExtractor()
+        parser.feed(html)
+        text = " ".join(parser.chunks)
+        text = " ".join(text.split())
+        return text[:max_chars]
+
+    except Exception as e:
+        print(f"記事取得失敗 ({url}): {e}")
+        return ""
+
+
+# ──────────────────────────────────────────────
+# Groq①: コンテンツ選定
+# ──────────────────────────────────────────────
+
+def select_best_item(items: list[dict], client: Groq) -> int:
+    """タイトル+要約を渡して最良の1件のインデックスを返す"""
+    items_text = "\n".join(
+        f"[{i+1}] {item['title']} / ch: {item.get('channel', '')} ({item.get('published', '')})"
         for i, item in enumerate(items)
     )
 
-    prompt = f"""以下のAIニュース一覧から、日本のXユーザーに最もバズりそうな1本の番号だけを返してください。
+    prompt = f"""以下のAI関連コンテンツ一覧から、日本のXユーザーに最もバズりそうな1本の番号だけを返してください。
 
 【選定基準】
 - 企業発表・新モデルリリース・業界動向を優先
 - 具体的な数字・比較・ビジネスインパクトがあるものを優先
+- 「日本人がまだ知らない海外の最新AI情報」として紹介できるものを優先
 - 個人作品・チュートリアル系は選ばない
 
-【ニュース一覧】
-{articles_text}
+【コンテンツ一覧】
+{items_text}
 
 番号のみ（例: 3）を返してください。説明不要。"""
 
@@ -187,48 +248,61 @@ def select_article(items: list[dict], client: Groq) -> int:
 
 
 # ──────────────────────────────────────────────
-# Groq呼び出し②: 本文を読んで図解+投稿文を生成
+# Groq②: 日本語要点まとめ + 図解生成
 # ──────────────────────────────────────────────
 
-def generate_content(article: dict, body: str, client: Groq) -> dict:
-    """記事本文から図解データ + X投稿文を生成する"""
+def generate_content(item: dict, body: str, client: Groq) -> dict:
+    """動画/記事の内容から日本語投稿文 + 図解データを生成"""
 
-    prompt = f"""あなたはAI情報発信のプロです。以下の記事を深く読み、日本のXユーザー向けに図解コンテンツを作成してください。
+    is_youtube = item.get("source") == "youtube"
+    source_label = "YouTube動画" if is_youtube else "記事"
+    url = item["url"]
 
-【記事タイトル】
-{article['title']}
+    prompt = f"""あなたは海外AI情報を日本語でわかりやすく発信するSNSクリエイターです。
+以下の{source_label}の内容を深く読み、日本のXユーザー向けに図解コンテンツを作成してください。
 
-【記事本文】
-{body if body else article['summary']}
+【タイトル】
+{item['title']}
+
+【チャンネル/ソース】
+{item.get('channel', '')}
+
+【内容】
+{body if body else item['summary']}
+
+【投稿文のルール】
+- 冒頭は「🔥」「⚡」「🚨」などで始め、インパクトを出す
+- 「日本語でわかりやすく解説します」「海外では〜」など、日本人向けに橋渡しする文脈を入れる
+- {'最後にYouTubeのURLを「🎥 動画はこちら→ ' + url + '」の形式で必ず含める' if is_youtube else 'ハッシュタグ3個以内'}
+- 270字以内（URLを含む）
 
 【テンプレート選択ルール】
-- stat:       インパクトある数字・記録・スペックが中心の記事
-- list:       5つの特徴・変化・ポイントが挙げられる記事
-- comparison: 2つのモデル・サービス・手法を比較している記事
-- ranking:    順位・シェア・ベンチマーク形式で整理できる記事
+- stat:       インパクトある数字・記録・スペックが中心
+- list:       5つの特徴・変化・ポイントが挙げられる
+- comparison: 2つのモデル・サービス・手法を比較している
+- ranking:    順位・シェア・ベンチマーク形式で整理できる
 
 【重要】
-- 図解の各ポイントは必ず記事本文に書かれている事実から作成すること
+- 図解の各ポイントは必ず内容から抽出した事実を使うこと
 - 推測や補完で埋めないこと。情報が足りなければポイント数を減らすこと
-- stat テンプレートのpoints は実際に抽出できる分だけ（1〜3個）
 
 【出力】必ず以下のJSONのみ返してください（説明文・コメント不要）:
 {{
-  "caption": "<日本語X投稿文。インパクトある冒頭＋要点＋ハッシュタグ3個以内。270字以内>",
+  "caption": "<日本語X投稿文。270字以内>",
   "needs_infographic": true,
   "infographic": {{
     "template": "<stat | list | comparison | ranking>",
     "title": "<図解タイトル 18字以内>",
     "conclusion": "<まとめ一文 35字以内>",
 
-    // stat の場合（points は必ず5つ・5W1H構造で）
+    // stat の場合
     "key_stat": "<最もインパクトある数字や事実 25字以内>",
     "points": [
-      "<①何か：サービス/モデルの定義 30字以内>",
-      "<②何ができるか：主要機能・特徴 30字以内>",
+      "<①何か：定義 30字以内>",
+      "<②何ができるか：主要機能 30字以内>",
       "<③なぜ重要か：意義・インパクト 30字以内>",
-      "<④規模感：数字・比較・実績 30字以内>",
-      "<⑤背景・競合・今後の展開 30字以内>"
+      "<④規模感：数字・比較 30字以内>",
+      "<⑤背景・競合・今後 30字以内>"
     ],
 
     // list の場合
@@ -303,26 +377,43 @@ def main():
     print("=== AI News Content Generator 起動 ===")
     client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
-    # 1. ニュース収集
-    items = fetch_news()
+    # 1. YouTubeを優先ソースとして取得、失敗 or 0件ならRSSにフォールバック
+    youtube_api_key = os.environ.get("YOUTUBE_API_KEY", "")
+    items = []
+
+    if youtube_api_key:
+        items = fetch_youtube_videos(youtube_api_key, days=3)
+    else:
+        print("YOUTUBE_API_KEY未設定 → RSSにフォールバック")
+
     if not items:
-        print("24時間以内の新着AIニュースなし → 終了")
+        print("YouTube動画なし → RSSにフォールバック")
+        items = fetch_rss_news()
+
+    if not items:
+        print("コンテンツ取得なし → 終了")
         sys.exit(0)
-    print(f"取得: {len(items)}件")
 
-    # 2. Groq①: 最良記事の選定（タイトルのみ・軽量）
-    idx = select_article(items, client)
+    print(f"候補: {len(items)}件 (ソース: {items[0].get('source', 'unknown')})")
+
+    # 2. Groq①: 最良コンテンツの選定
+    idx = select_best_item(items, client)
     selected = items[idx]
-    print(f"選定記事: {selected['title']}")
+    print(f"選定: {selected['title']}")
+    print(f"URL: {selected['url']}")
 
-    # 3. 元記事から本文を取得
-    print(f"記事本文取得中: {selected['url']}")
-    body = fetch_article_body(selected["url"])
-    print(f"本文取得: {len(body)}文字")
+    # 3. 本文取得（YouTubeは説明文のみ、RSSは記事本文をスクレイピング）
+    if selected.get("source") == "youtube":
+        body = selected.get("summary", "")
+        print(f"動画説明文: {len(body)}文字")
+    else:
+        print(f"記事本文取得中: {selected['url']}")
+        body = fetch_article_body(selected["url"])
+        print(f"本文取得: {len(body)}文字")
 
-    # 4. Groq②: 本文を読んで図解+投稿文を生成
+    # 4. Groq②: 日本語要点まとめ + 図解生成
     result = generate_content(selected, body, client)
-    print(f"キャプション: {result['caption'][:60]}...")
+    print(f"キャプション: {result['caption'][:80]}...")
 
     # 5. 図解生成
     image_path = None
