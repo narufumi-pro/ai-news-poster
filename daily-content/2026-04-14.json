@@ -1,19 +1,19 @@
 {
   "date": "2026-04-14",
-  "caption": "Slate Auto、650億円の資金調達でエンジン掛け！安価な電気自動車トラックに注力する #SlateAuto #電気自動車 #自動車",
+  "caption": "スタンフォード大学のレポートが明らかにした、AIの専門家と一般の大きな意識の差。AIについて何が問題なのか？ #AI #スタンフォード大学 #レポート",
   "image": "daily-content/2026-04-14.png",
-  "source_url": "https://techcrunch.com/2026/04/13/slate-auto-raises-650m-to-fund-its-affordable-ev-truck-plans/",
+  "source_url": "https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/",
   "infographic_data": {
     "template": "stat",
-    "title": "Slate Auto",
-    "conclusion": "新たな電気自動車市場への挑戦",
-    "key_stat": "650億円",
+    "title": "AIの意識の差",
+    "conclusion": "AIの専門家と一般の意識の差は大きい",
+    "key_stat": "56%のAI専門家はAIの影響を肯定的に見る",
     "points": [
-      "Slate Auto：電気自動車スタートアップ",
-      "電気トラックの開発と生産",
-      "低価格戦略とカスタマイズ",
-      "資金調達額：640億円",
-      "米国市場での競争と展開"
+      "何か：AIの潜在的な利点",
+      "何ができるか：AIの応用例",
+      "なぜ重要か：AIの影響力",
+      "規模感：10%のアメリカ人はAIに興奮している",
+      "背景・競合・今後の展開：AI専門家と一般の意識の差が広がる"
     ]
   },
   "status": "ready"
