@@ -1,19 +1,19 @@
 {
   "date": "2026-04-14",
-  "caption": "スタンフォード大学のレポートが明らかにした、AIの専門家と一般の大きな意識の差。AIについて何が問題なのか？ #AI #スタンフォード大学 #レポート",
+  "caption": "🎥 動画はこちら→ https://www.youtube.com/watch?v=nkPk_N7qymw",
   "image": "daily-content/2026-04-14.png",
-  "source_url": "https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/",
+  "source_url": "https://www.youtube.com/watch?v=nkPk_N7qymw",
   "infographic_data": {
     "template": "stat",
-    "title": "AIの意識の差",
-    "conclusion": "AIの専門家と一般の意識の差は大きい",
-    "key_stat": "56%のAI専門家はAIの影響を肯定的に見る",
+    "title": "AIロボット",
+    "conclusion": "ゲームの未来に大きな影響を与える",
+    "key_stat": "ゲームを変える新技術",
     "points": [
-      "何か：AIの潜在的な利点",
-      "何ができるか：AIの応用例",
-      "なぜ重要か：AIの影響力",
-      "規模感：10%のアメリカ人はAIに興奮している",
-      "背景・競合・今後の展開：AI専門家と一般の意識の差が広がる"
+      "AIロボット：人工知能を搭載したロボット",
+      "主な機能：ゲームプレイの支援や自動化",
+      "重要性：ゲーム業界に大きな変化をもたらす",
+      "規模感：高精度のAI技術を搭載",
+      "背景：技術の進化がロボットの発達に寄与"
     ]
   },
   "status": "ready"
