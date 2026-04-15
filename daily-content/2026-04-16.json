@@ -1,0 +1,19 @@
+{
+  "date": "2026-04-16",
+  "caption": "🚨 Jensen Huang のインタビューからわかった NVIDIA の進化 🚀 日本語でわかりやすく解説します。海外では NVIDIA のデファクトスタンダード化が進んでいます。",
+  "image": "daily-content/2026-04-16.png",
+  "source_url": "https://www.youtube.com/watch?v=Hrbq66XqtCo",
+  "infographic_data": {
+    "template": "list",
+    "title": "NVIDIA の現在",
+    "conclusion": "NVIDIA は先細りです",
+    "points": [
+      "NVIDIA が TPU で競争",
+      "先進的なチップの供給チェーン",
+      "NVIDIA の優位性",
+      "チップの進化",
+      "将来の展開"
+    ]
+  },
+  "status": "ready"
+}
