@@ -1,0 +1,26 @@
+{
+  "date": "2026-04-17",
+  "caption": "🚨 日本語でわかりやすく解説します。海外では、AIが不可能と思われる発明を起こしていることが分かりました。AIの進化は予測を超えています。🎥 動画はこちら→ https://www.youtube.com/watch?v=4kq3lcfROoo",
+  "image": "daily-content/2026-04-17.png",
+  "source_url": "https://www.youtube.com/watch?v=4kq3lcfROoo",
+  "infographic_data": {
+    "template": "ranking",
+    "title": "AI発明ランキング",
+    "conclusion": "AIの進化がもたらす未来",
+    "items": [
+      {
+        "name": "1位",
+        "desc": "AI発明の可能性"
+      },
+      {
+        "name": "2位",
+        "desc": "AI進化の予測"
+      },
+      {
+        "name": "3位",
+        "desc": "AI発明の背景"
+      }
+    ]
+  },
+  "status": "ready"
+}
