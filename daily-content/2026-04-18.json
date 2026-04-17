@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-18",
+  "caption": "🚨 エネルギー消費を80%削減！海外ではAIの新技術が話題です。日本語でわかりやすく解説します。🎥 動画はこちら→ https://www.youtube.com/watch?v=NE9gm7ww3Ww",
+  "image": "daily-content/2026-04-18.png",
+  "source_url": "https://www.youtube.com/watch?v=NE9gm7ww3Ww",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIエネルギー削減",
+    "conclusion": "大幅なエネルギー削減",
+    "key_stat": "80%のエネルギー削減",
+    "points": [
+      "①AI新技術：エネルギー効率化",
+      "②何ができるか：コンピューターでAI実行",
+      "③なぜ重要か：地球環境への影響",
+      "④規模感：エネルギー需要の増加を抑える",
+      "⑤背景・競合・今後：技術の進化が期待される"
+    ]
+  },
+  "status": "ready"
+}
