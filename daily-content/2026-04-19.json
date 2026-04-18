@@ -1,0 +1,19 @@
+{
+  "date": "2026-04-19",
+  "caption": "🚨日本語でわかりやすく解説します。TransformersとAttention Mechanismの基礎について説明してる動画を紹介します。",
+  "image": "daily-content/2026-04-19.png",
+  "source_url": "https://www.youtube.com/watch?v=kMWpoKVLefs",
+  "infographic_data": {
+    "template": "list",
+    "title": "Transformersの基礎",
+    "conclusion": "Transformersの基礎を学ぼう",
+    "points": [
+      "①Transformersとは：ディープラーニングモデル",
+      "②Attention Mechanism：重要な情報に焦点を当てる",
+      "③LLM Basics：言語モデルへの応用",
+      "④Generative AI：画像・テキスト生成への応用",
+      "⑤実践への応用：自然言語処理タスク"
+    ]
+  },
+  "status": "ready"
+}
