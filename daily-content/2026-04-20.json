@@ -1,0 +1,24 @@
+{
+  "date": "2026-04-20",
+  "caption": "🔥 海外ではChatGPTの代替としてClaude AIが注目されています。日本語でわかりやすく解説します。 Claude AIの特徴やChatGPTとの比較について紹介します。",
+  "image": "daily-content/2026-04-20.png",
+  "source_url": "https://www.youtube.com/watch?v=BTeNxStBnW8",
+  "infographic_data": {
+    "template": "comparison",
+    "title": "ChatGPT vs Claude",
+    "conclusion": "Claude AIが優れている点",
+    "left_label": "ChatGPT",
+    "right_label": "Claude",
+    "left_points": [
+      "機能が限定されている",
+      "利用無料枠が少ない",
+      "プライバシーへの懸念"
+    ],
+    "right_points": [
+      "より高度な機能",
+      "より多くの利用無料枠",
+      "より優れたプライバシー保護"
+    ]
+  },
+  "status": "ready"
+}
