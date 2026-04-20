@@ -1,0 +1,34 @@
+{
+  "date": "2026-04-21",
+  "caption": "🚨 海外ではAIライティングツールが急成長しています。日本語でわかりやすく解説します。Top 10 AI Writing Tools 2026を紹介します。🎥 動画はこちら→ https://www.youtube.com/watch?v=rt9snA80w4E",
+  "image": "daily-content/2026-04-21.png",
+  "source_url": "https://www.youtube.com/watch?v=rt9snA80w4E",
+  "infographic_data": {
+    "template": "ranking",
+    "title": "AIライティングツール",
+    "conclusion": "ChatGPTが1位",
+    "items": [
+      {
+        "name": "ChatGPT",
+        "desc": "最も優秀"
+      },
+      {
+        "name": "Claude",
+        "desc": "優秀"
+      },
+      {
+        "name": "Gemini",
+        "desc": "高性能"
+      },
+      {
+        "name": "Tool4",
+        "desc": "便利"
+      },
+      {
+        "name": "Tool5",
+        "desc": "有名"
+      }
+    ]
+  },
+  "status": "ready"
+}
