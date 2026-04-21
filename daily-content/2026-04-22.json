@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-22",
+  "caption": "🚨 AIが khoa họcを進める！Dario AmodeiはAIが50-100年分の科学的進歩を5-10年間に圧縮するという予測を行った。データはすでに予測を裏付けています。日本語でわかりやすく解説します。海外ではAIの進歩が急速に進んでいます。🎥 動画はこちら→ https://www.youtube.com/watch?v=W89w5QD6lc8",
+  "image": "daily-content/2026-04-22.png",
+  "source_url": "https://www.youtube.com/watch?v=W89w5QD6lc8",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIの進歩",
+    "conclusion": "AIは科学の進歩を加速する",
+    "key_stat": "5-10年",
+    "points": [
+      "① AIの進歩：科学的発見の加速",
+      "② 予測：Dario Amodeiの予測",
+      "③ 意義：科学の進歩を5-10年に圧縮",
+      "④ 規模感：50-100年分の進歩",
+      "⑤ 背景：AI技術の急速な進歩"
+    ]
+  },
+  "status": "ready"
+}
