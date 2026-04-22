@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-23",
+  "caption": "NVIDIAの新世代Vera Rubinシステムが登場しました。海外では、NVIDIAの最新テクノロジーが話題になっています。",
+  "image": "daily-content/2026-04-23.png",
+  "source_url": "https://www.youtube.com/watch?v=62IA7NbdNZM",
+  "infographic_data": {
+    "template": "stat",
+    "title": "NVIDIA新世代",
+    "conclusion": "新世代Vera Rubinシステム",
+    "key_stat": "7つのAIチップ",
+    "points": [
+      "NVIDIA新世代：Vera Rubinシステム",
+      "Groq 3：cutting-edgeテクノロジー",
+      "AIチップ：7つのブレークスルー",
+      "パフォーマンス：大幅向上",
+      "将来性：AI技術の進化"
+    ]
+  },
+  "status": "ready"
+}
