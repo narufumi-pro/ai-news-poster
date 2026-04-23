@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-24",
+  "caption": "NVIDIAの「The LLM to SLM Blueprint」について日本語でわかりやすく解説します。海外ではAIの業界標準が大きいほどよいものであるかについて議論が行われています。",
+  "image": "daily-content/2026-04-24.png",
+  "source_url": "https://www.youtube.com/watch?v=nKRhPexi4u8",
+  "infographic_data": {
+    "template": "stat",
+    "title": "NVIDIAの新しいAI研究",
+    "conclusion": "AIの発展に大きな意味あり",
+    "key_stat": "LLMからSLMへのパラダイムシフト",
+    "points": [
+      "LLM：大規模言語モデル",
+      "SLM：スケーラブルな言語モデル",
+      "AIの効率化が可能",
+      "業界の標準が大きいほどよいものではない",
+      "将来のAI研究の方向性に大きな影響"
+    ]
+  },
+  "status": "ready"
+}
