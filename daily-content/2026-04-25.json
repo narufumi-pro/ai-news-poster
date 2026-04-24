@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-25",
+  "caption": "🔥 Claudeを使ったビジネスオンボーディングを60分で完了！日本語でわかりやすく解説します。海外ではAIを戦略的に適用することでビジネスを革新させることができます。🎥 動画はこちら→ https://www.youtube.com/watch?v=rJSdQ9pLkas",
+  "image": "daily-content/2026-04-25.png",
+  "source_url": "https://www.youtube.com/watch?v=rJSdQ9pLkas",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Claude",
+    "conclusion": "AIでビジネスを革新",
+    "key_stat": "60分",
+    "points": [
+      "Claudeとは：AIオンボーディングツール",
+      "できること：ビジネス自動化",
+      "重要性：時間短縮・効率化",
+      "規模：60分で完了",
+      "背景：AIの戦略的適用"
+    ]
+  },
+  "status": "ready"
+}
