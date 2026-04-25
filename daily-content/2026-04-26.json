@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-26",
+  "caption": "🔥 次世代AIが科学の難問を解決！海外ではSandboxAQ CEO Jack Hidaryが『Mornings with Maria』に出演し、AIの医療、サイバーセキュリティ、科学でのブレークスルーについて話しました。日本語でわかりやすく解説します。🎥 動画はこちら→ https://www.youtube.com/watch?v=77w3Om3PQA4",
+  "image": "daily-content/2026-04-26.png",
+  "source_url": "https://www.youtube.com/watch?v=77w3Om3PQA4",
+  "infographic_data": {
+    "template": "stat",
+    "title": "次世代AIの進歩",
+    "conclusion": "AIが科学の難問を解決",
+    "key_stat": "医療・サイバーセキュリティで大きな影響",
+    "points": [
+      "①次世代AI：深層学習などの技術が改善",
+      "②医療への応用：病気の予測・治療が可能",
+      "③サイバーセキュリティ：脅威を検出・防止",
+      "④科学への貢献：複雑な問題を解決",
+      "⑤将来の潜在性：人類に大きな影響を与える"
+    ]
+  },
+  "status": "ready"
+}
