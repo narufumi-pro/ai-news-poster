@@ -1,0 +1,19 @@
+{
+  "date": "2026-04-27",
+  "caption": "🚨 海外では最新のAI技術が話題です。日本語でわかりやすく解説します。Gemini 3.5 ProがGoogleのエグゼクティブによって確認され、GPT-5.5 CodexがOpenAIのAPIからリークしました。Claude Codeにもバグが見つかりました。🎥 動画はこちら→ https://www.youtube.com/watch?v=XRCsB1Zx4oU",
+  "image": "daily-content/2026-04-27.png",
+  "source_url": "https://www.youtube.com/watch?v=XRCsB1Zx4oU",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIニュース",
+    "conclusion": "最新のAI技術です",
+    "points": [
+      "Gemini 3.5 Proが確認",
+      "GPT-5.5 Codexがリーク",
+      "Claude Codeにバグ",
+      "最新のAI技術",
+      "開発が進んでいます"
+    ]
+  },
+  "status": "ready"
+}
