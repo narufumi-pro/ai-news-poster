@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-28",
+  "caption": "🚨 OpenAIの最新リリース、GPT-5.5またはSpudは予想と違ったものでした！日本語でわかりやすく解説します。海外ではOpenAIの最新技術が話題になっているようです。🎥 動画はこちら→ https://www.youtube.com/watch?v=FCVBzLsvxTw",
+  "image": "daily-content/2026-04-28.png",
+  "source_url": "https://www.youtube.com/watch?v=FCVBzLsvxTw",
+  "infographic_data": {
+    "template": "stat",
+    "title": "GPT-5.5",
+    "conclusion": "OpenAIの最新技術",
+    "key_stat": "GPT-5.5",
+    "points": [
+      "①OpenAIの最新モデル：GPT-5.5",
+      "②自然言語処理能力の向上：より高度な会話",
+      "③潜在的な用途：コンテンツ生成、言語翻訳",
+      "④競合との比較：他のAIモデルとの差別化",
+      "⑤今後の展開：AI技術の進化"
+    ]
+  },
+  "status": "ready"
+}
