@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-29",
+  "caption": "🚨海外ではAIの新たなブレイクスルーが起こっている。日本語でわかりやすく解説します。BOFAのHaim Israelは新しいAIの進歩について話しています。🎥 動画はこちら→ https://www.youtube.com/watch?v=k4KlOd0EjFs",
+  "image": "daily-content/2026-04-29.png",
+  "source_url": "https://www.youtube.com/watch?v=k4KlOd0EjFs",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIブレイクスルー",
+    "conclusion": "AIの進歩が加速",
+    "key_stat": "AIブレイクスルー",
+    "points": [
+      "①AIとは：人工知能",
+      "②AIの機能：データ分析",
+      "③AIの重要性：効率化",
+      "④AIの規模：急速拡大",
+      "⑤AIの背景：テクノロジー進化"
+    ]
+  },
+  "status": "ready"
+}
