@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-01",
+  "caption": "🔥 DeepSeek V4がGPT-5.5やOpus 4.7と同等の成績を収めました。日本語でわかりやすく解説します。海外ではすでに注目を集めています。🎥 動画はこちら→ https://www.youtube.com/watch?v=yHgHU75N5T8",
+  "image": "daily-content/2026-05-01.png",
+  "source_url": "https://www.youtube.com/watch?v=yHgHU75N5T8",
+  "infographic_data": {
+    "template": "stat",
+    "title": "DeepSeek V4",
+    "conclusion": "GPT-5.5に匹敵",
+    "key_stat": "3x低コスト",
+    "points": [
+      "①DeepSeek V4：最新バージョン",
+      "②GPT-5.5と同等の性能",
+      "③Costが3倍低くなっている",
+      "④海外の注目度が高まっている",
+      "⑤Agentic coding benchmarksで認められた"
+    ]
+  },
+  "status": "ready"
+}
