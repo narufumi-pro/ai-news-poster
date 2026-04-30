@@ -1,0 +1,24 @@
+{
+  "date": "2026-04-30",
+  "caption": "🔥 overseasでは、DeepSeek V4 Proが話題！日本語でわかりやすく解説します。GPT-5.5やOpus 4.7と同等のパフォーマンスを実現しながら、3倍低コストに達しています。🎥 動画はこちら→ https://www.youtube.com/watch?v=yHgHU75N5T8",
+  "image": "daily-content/2026-04-30.png",
+  "source_url": "https://www.youtube.com/watch?v=yHgHU75N5T8",
+  "infographic_data": {
+    "template": "comparison",
+    "title": "DeepSeek V4 Pro",
+    "conclusion": "低コストで高パフォーマンス",
+    "left_label": "DeepSeek V4 Pro",
+    "right_label": "GPT-5.5/Opus 4.7",
+    "left_points": [
+      "3倍低コスト",
+      "12x Lower Cost",
+      "同等パフォーマンス"
+    ],
+    "right_points": [
+      "高コスト",
+      "高パフォーマンス",
+      "従来のベンチマーク"
+    ]
+  },
+  "status": "ready"
+}
