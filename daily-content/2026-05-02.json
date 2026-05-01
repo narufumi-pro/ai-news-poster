@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-02",
+  "caption": "🎥 動画はこちら→ https://www.youtube.com/watch?v=JVuG9ABSndI",
+  "image": "daily-content/2026-05-02.png",
+  "source_url": "https://www.youtube.com/watch?v=JVuG9ABSndI",
+  "infographic_data": {
+    "template": "stat",
+    "title": "LLMの基礎",
+    "conclusion": "LLMの理解が深まります",
+    "key_stat": "LLMは次の単語を予測",
+    "points": [
+      "①LLMの定義：次の単語を予測するモデル",
+      "②LLMの機能：統計的に最も妥当なテキストの続きを生成",
+      "③LLMの意義：ビジネスへの応用",
+      "④LLMの規模：大量のデータを処理",
+      "⑤LLMの背景：AI技術の進化"
+    ]
+  },
+  "status": "ready"
+}
