@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-03",
+  "caption": "🚨 新しいAIツールが心不全を5年前に予測！日本語でわかりやすく解説します。海外では心不全の早期予測に期待が集まっています。🎥 動画はこちら→ https://www.youtube.com/watch?v=iCRdenefeNw",
+  "image": "daily-content/2026-05-03.png",
+  "source_url": "https://www.youtube.com/watch?v=iCRdenefeNw",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIツール",
+    "conclusion": "早期予測が可能",
+    "key_stat": "5年先",
+    "points": [
+      "①AIツール：心不全予測",
+      "②主要機能：リスク検出",
+      "③なぜ重要か：早期治療",
+      "④規模感：5年先",
+      "⑤背景：カードロジー分野"
+    ]
+  },
+  "status": "ready"
+}
