@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-04",
+  "caption": "⚡ 日本語でわかりやすく解説します。海外ではがんの新薬とAI技術が注目されています。Fox News Clipsの動画では、AIを利用したがん検査について話しています。",
+  "image": "daily-content/2026-05-04.png",
+  "source_url": "https://www.youtube.com/watch?v=CfCq0RFZahM",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIがん検査",
+    "conclusion": "新しい治療法",
+    "key_stat": "AIによる早期発見",
+    "points": [
+      "① AIがん検査：早期発見",
+      "② AIの役割：データ解析",
+      "③ 意義：治療成功率向上",
+      "④ 規模感：AI技術の進歩",
+      "⑤ 背景：がん治療の未来"
+    ]
+  },
+  "status": "ready"
+}
