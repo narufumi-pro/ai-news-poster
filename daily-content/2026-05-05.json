@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-05",
+  "caption": "🚨 海外ではMicrosoftとOpenAIの独占契約が終了したことが発表された。日本語でわかりやすく解説します。Google Cloudの成長率は63%である。",
+  "image": "daily-content/2026-05-05.png",
+  "source_url": "https://www.youtube.com/watch?v=3-_orqdwpo8",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI市場の変化",
+    "conclusion": "AI市場は激しく変化している",
+    "key_stat": "63%の成長率",
+    "points": [
+      "MicrosoftとOpenAIの独占契約が終了",
+      "Google Cloudの成長率は63%",
+      "Metaの新しい動き",
+      "AI市場の激しい変化",
+      "新しい机会の到来"
+    ]
+  },
+  "status": "ready"
+}
