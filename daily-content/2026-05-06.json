@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-06",
+  "caption": "膵臓がんを早期に検出できるAIツールが開発されました。",
+  "image": "daily-content/2026-05-06.png",
+  "source_url": "https://www.youtube.com/watch?v=KupW6YRSXhs",
+  "infographic_data": {
+    "template": "stat",
+    "title": "膵臓がん検出AI",
+    "conclusion": "早期検出が可能",
+    "key_stat": "早期検出率向上",
+    "points": [
+      "膵臓がん：がんの一種",
+      "AIツール：画像解析で検出",
+      "早期検出：治療成功率向上",
+      "Mayo Clinic：開発機関",
+      "FDA：承認待ち"
+    ]
+  },
+  "status": "ready"
+}
