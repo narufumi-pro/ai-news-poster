@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-07",
+  "caption": "🔥海外ではAIが変化をもたらしている！日本語でわかりやすく解説します。AIはヘルスケア・ファイナンス・クリエイティビティなどの分野で革命を起こしている。🎥 動画はこちら→ https://www.youtube.com/watch?v=FMjIWI0iVz8",
+  "image": "daily-content/2026-05-07.png",
+  "source_url": "https://www.youtube.com/watch?v=FMjIWI0iVz8",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIの変化",
+    "conclusion": "AIは世界を変えている",
+    "points": [
+      "ヘルスケアの進化",
+      "ファイナンスの最適化",
+      "クリエイティビティの支援",
+      "業界の変革",
+      "未来への影響"
+    ]
+  },
+  "status": "ready"
+}
