@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-08",
+  "caption": "🔥 海外ではAlibabaの新AI「Qwen」が注目！日本語でわかりやすく解説します。Qwen 3.6は、一つになったツールで様々な作業ができるということで、ChatGPTやGeminiの代替案として無料で利用可能です。 🎥 動画はこちら→ https://www.youtube.com/watch?v=zv_hTVk2-DE",
+  "image": "daily-content/2026-05-08.png",
+  "source_url": "https://www.youtube.com/watch?v=zv_hTVk2-DE",
+  "infographic_data": {
+    "template": "list",
+    "title": "Qwenの特徴",
+    "conclusion": "Qwenは無料で使える强力ツール",
+    "points": [
+      "Alibabaの新AI",
+      "一つになったツール",
+      "ChatGPTやGeminiの代替",
+      "無料で利用可能",
+      "幅広い作業対応"
+    ]
+  },
+  "status": "ready"
+}
