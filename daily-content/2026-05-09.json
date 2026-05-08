@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-09",
+  "caption": "🎥 動画はこちら→ https://www.youtube.com/watch?v=70gy9_q5Lfc",
+  "image": "daily-content/2026-05-09.png",
+  "source_url": "https://www.youtube.com/watch?v=70gy9_q5Lfc",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI革新",
+    "conclusion": "AIは急速に進化",
+    "key_stat": "AI技術進化",
+    "points": [
+      "AI：人工知能",
+      "AIの進化：認識・学習機能",
+      "なぜ重要か：効率化・革新",
+      "規模感：年間成長率",
+      "背景：データ増加"
+    ]
+  },
+  "status": "ready"
+}
