@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-10",
+  "caption": "人工知能の最新技術を紹介！海外ではAIの革新が進化しています。",
+  "image": "daily-content/2026-05-10.png",
+  "source_url": "https://www.youtube.com/watch?v=70gy9_q5Lfc",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIの進化",
+    "conclusion": "AIの未来は大きな変化をもたらします",
+    "key_stat": "AI技術の革新",
+    "points": [
+      "AIの定義：機械学習",
+      "AIの機能：画像認識",
+      "AIの意義：自動運転",
+      "AIの規模：成長市場",
+      "AIの背景：人工知能の進化"
+    ]
+  },
+  "status": "ready"
+}
