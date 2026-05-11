@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-12",
+  "caption": "🚨 日本語でわかりやすく解説します。海外では、2026年にAI発明が注目されています。🎥 動画はこちら→ https://www.youtube.com/watch?v=qokmNQOjamQ",
+  "image": "daily-content/2026-05-12.png",
+  "source_url": "https://www.youtube.com/watch?v=qokmNQOjamQ",
+  "infographic_data": {
+    "template": "list",
+    "title": "AI発明のトレンド",
+    "conclusion": "AIが変える未来",
+    "points": [
+      "Comulytic Note Pro：最新のAIノート",
+      "RIVGOT：AIを活用した新技術",
+      "AI発明の将来性：高まる期待",
+      "AIの応用：さまざまな分野",
+      "2026年のAIトレンド：今後の展開"
+    ]
+  },
+  "status": "ready"
+}
