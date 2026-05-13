@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-14",
+  "caption": "Googleの新型スマートラップトップ「Googlebook」が登場。従来のOSを超えた新時代が到来します。🎥 動画はこちら→ https://www.youtube.com/watch?v=fMkT4HFcfHE",
+  "image": "daily-content/2026-05-14.png",
+  "source_url": "https://www.youtube.com/watch?v=fMkT4HFcfHE",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Googlebook",
+    "conclusion": "新時代の始まり",
+    "key_stat": "OSを超えたラップトップ",
+    "points": [
+      "スマートラップトップの定義：従来のOSと比較した新しい概念",
+      "Googlebookの主な機能：AIを活用した高い性能",
+      "なぜ重要か：従来のOSの限界を超える",
+      "規模感：Googleの新しい戦略",
+      "背景・競合・今後：ラップトップ業界の未来"
+    ]
+  },
+  "status": "ready"
+}
