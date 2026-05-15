@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-16",
+  "caption": "🚨 WordPress 7.0 にはAIが組み込まれています！ChatGPT、Claude、Geminiが一つの場所で連携可能に。日本語でわかりやすく解説します。海外ではWordPress 7.0が話題となっています。 🎥 動画はこちら→ https://www.youtube.com/watch?v=p3zMul3AQCY",
+  "image": "daily-content/2026-05-16.png",
+  "source_url": "https://www.youtube.com/watch?v=p3zMul3AQCY",
+  "infographic_data": {
+    "template": "list",
+    "title": "WordPress 7.0 のAI機能",
+    "conclusion": "WordPress 7.0 でAIをより簡単に利用できます",
+    "points": [
+      "WordPress 7.0 ではAIをビルトインでサポート",
+      "ChatGPT、Claude、Geminiを一つの場所で連携",
+      "プラグインごとにAPIキーを設定不要",
+      "AIによる自動化が容易になる",
+      "WordPressユーザーの生産性を向上"
+    ]
+  },
+  "status": "ready"
+}
