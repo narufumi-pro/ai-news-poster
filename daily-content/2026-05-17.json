@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-17",
+  "caption": "🚨 海外では医療分野でAIが大きなブレークスルーを達成しました。日本語でわかりやすく解説します。The Curiosity LabのYouTube動画では、医療におけるAIの新しい展開について説明しています。",
+  "image": "daily-content/2026-05-17.png",
+  "source_url": "https://www.youtube.com/watch?v=knBn1Pc1JG0",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI医療",
+    "conclusion": "医療の将来",
+    "key_stat": "AIが変える医療",
+    "points": [
+      "①AI：医療支援ツール",
+      "②病気予測：早期発見",
+      "③治療開発：効果的な治療",
+      "④コスト削減：効率化",
+      "⑤将来展望：更なる革新"
+    ]
+  },
+  "status": "ready"
+}
