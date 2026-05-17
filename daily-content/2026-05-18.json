@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-18",
+  "caption": "🎥 動画はこちら→ https://www.youtube.com/watch?v=fXm7p6hnn4o",
+  "image": "daily-content/2026-05-18.png",
+  "source_url": "https://www.youtube.com/watch?v=fXm7p6hnn4o",
+  "infographic_data": {
+    "template": "list",
+    "title": "AI 週間の5つの変化",
+    "conclusion": "AIの最新トレンドをチェック",
+    "points": [
+      "ChatGPT広告",
+      "Claude Dreaming",
+      "Google I/O予測",
+      "Nintendoの動向",
+      "AIの最新進化"
+    ]
+  },
+  "status": "ready"
+}
