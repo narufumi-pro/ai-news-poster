@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-19",
+  "caption": "🔥 AI Agent、ChatGPT、LLMの違いを日本語でわかりやすく解説します。海外ではよく話題に上がっていますが、日本語ではあまり説明されていません。Syszoneの動画では、これらのAIの違いについて深く解説しています。🎥 動画はこちら→ https://www.youtube.com/watch?v=xD0DhNph1Lc",
+  "image": "daily-content/2026-05-19.png",
+  "source_url": "https://www.youtube.com/watch?v=xD0DhNph1Lc",
+  "infographic_data": {
+    "template": "comparison",
+    "title": "AI Agent vs ChatGPT vs LLM",
+    "conclusion": "3つのAIの違いを理解して活用しましょう",
+    "left_label": "AI Agent",
+    "right_label": "ChatGPT",
+    "left_points": [
+      "タスクの自動化",
+      "意思決定の支援",
+      "人間と協力する"
+    ],
+    "right_points": [
+      "会話の理解",
+      "テキストの生成",
+      "質問への回答"
+    ]
+  },
+  "status": "ready"
+}
