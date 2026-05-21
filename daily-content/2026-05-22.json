@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-22",
+  "caption": "2026年の5つのAIブレイクスルーが数百万の仕事を変える",
+  "image": "daily-content/2026-05-22.png",
+  "source_url": "https://www.youtube.com/watch?v=h1t0weVYhTc",
+  "infographic_data": {
+    "template": "list",
+    "title": "5 AIブレイクスルー",
+    "conclusion": "AIが仕事を変える",
+    "points": [
+      "AIによる自動化",
+      "人間の意思決定を支援",
+      "ビッグデータ分析",
+      "自然言語処理",
+      "ロボティクス"
+    ]
+  },
+  "status": "ready"
+}
