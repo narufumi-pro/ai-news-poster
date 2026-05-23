@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-24",
+  "caption": "🔥月5万円課金するAIサービス！日本語でわかりやすく解説します。海外ではChatGPT・Claude・Geminiなどが人気があります。🎥 動画はこちら→ https://www.youtube.com/watch?v=rEw8hJy6pYk",
+  "image": "daily-content/2026-05-24.png",
+  "source_url": "https://www.youtube.com/watch?v=rEw8hJy6pYk",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIサービス比較",
+    "conclusion": "各AIサービスの使い方や特徴を把握しましょう",
+    "points": [
+      "ChatGPT：会話型AI",
+      "Claude：コンテンツ生成AI",
+      "Gemini：検索型AI",
+      "月5万円の課金：高額なAIサービス",
+      "海外での人気：AIサービスの需要"
+    ]
+  },
+  "status": "ready"
+}
