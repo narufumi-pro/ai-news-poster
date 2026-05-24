@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-25",
+  "caption": "🔥月5万円課金のAIサービス登場！日本語でわかりやすく解説します。海外ではChatGPT、Claude、Geminiなどが注目されています。🎥 動画はこちら→ https://www.youtube.com/watch?v=rEw8hJy6pYk",
+  "image": "daily-content/2026-05-25.png",
+  "source_url": "https://www.youtube.com/watch?v=rEw8hJy6pYk",
+  "infographic_data": {
+    "template": "list",
+    "title": "月5万円課金AIサービス",
+    "conclusion": "最新のAIサービスをチェック",
+    "points": [
+      "ChatGPT：会話型AI",
+      "Claude：テキスト生成AI",
+      "Gemini：マルチタスクAI",
+      "月5万円の課金サービス",
+      "AIの未来を考える"
+    ]
+  },
+  "status": "ready"
+}
