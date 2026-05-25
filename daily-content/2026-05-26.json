@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-26",
+  "caption": "🚨 Sam Altmanによると、現在生まれる子供たちはAIよりも賢くなることはないと言いました。日本語でわかりやすく解説します。海外ではAIの進化が急速に進んでおり、人間の知能を超える可能性があると言われています。🎥 動画はこちら→ https://www.youtube.com/watch?v=x7KmbRB9My4",
+  "image": "daily-content/2026-05-26.png",
+  "source_url": "https://www.youtube.com/watch?v=x7KmbRB9My4",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIの進化",
+    "conclusion": "AIは急速に進化",
+    "key_stat": "AIが人間を超える",
+    "points": [
+      "①AI: 人工知能",
+      "②進化: 急速に知能が増加",
+      "③重要性: 人間の知能を超える",
+      "④規模: 将来は人間を超える",
+      "⑤背景: 技術の進歩が原因"
+    ]
+  },
+  "status": "ready"
+}
