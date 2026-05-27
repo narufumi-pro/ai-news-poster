@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-28",
+  "caption": "人工知能の新たなブレークスルーが登場する！日本語でわかりやすく解説します。海外では、Vision Language Models (VLMs) が注目されます。🎥 動画はこちら→ https://www.youtube.com/watch?v=bWQ_bPu-MU0",
+  "image": "daily-content/2026-05-28.png",
+  "source_url": "https://www.youtube.com/watch?v=bWQ_bPu-MU0",
+  "infographic_data": {
+    "template": "stat",
+    "title": "VLMsの衝撃",
+    "conclusion": "人工知能の新時代",
+    "key_stat": "視覚認識の革命",
+    "points": [
+      "①VLMsとは：視覚言語モデル",
+      "②何ができるか：画像とテキストの理解",
+      "③なぜ重要か：人工知能の進化",
+      "④規模感：数百万の画像を学習",
+      "⑤背景・競合・今後：新たなアプリケーションの開発"
+    ]
+  },
+  "status": "ready"
+}
