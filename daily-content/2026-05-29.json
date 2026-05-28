@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-29",
+  "caption": "OpenAI Erdos の数学的突破が海外で話題です。日本語でわかりやすく解説します。OpenAI の推論モデルが、以前未解決だった問題を解決しました。🎥 動画はこちら→ https://www.youtube.com/watch?v=6ymXS6CYH8c",
+  "image": "daily-content/2026-05-29.png",
+  "source_url": "https://www.youtube.com/watch?v=6ymXS6CYH8c",
+  "infographic_data": {
+    "template": "stat",
+    "title": "OpenAI Erdos",
+    "conclusion": "数学的問題を解決",
+    "key_stat": "未解決問題解決",
+    "points": [
+      "①OpenAI Erdos：数学的問題解決モデル",
+      "②推論モデル：複雑な問題を解決する",
+      "③重要性：未解決問題を解決する",
+      "④規模：数百万の問題を解決可能",
+      "⑤背景：AI 기술の進歩"
+    ]
+  },
+  "status": "ready"
+}
