@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-30",
+  "caption": "海外ではAIテストの挑戦が注目されています。日本語でわかりやすく解説します。",
+  "image": "daily-content/2026-05-30.png",
+  "source_url": "https://www.youtube.com/watch?v=Kj9ydfUtmxc",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIテストチャレンジ",
+    "conclusion": "AIテストの重要性",
+    "key_stat": "ハンズオンAIテスト",
+    "points": [
+      "①AIテスト：テスト自動化",
+      "②ハンズオン：実践的な経験",
+      "③インパクト：テストの効率化",
+      "④規模感：グローバルな参加",
+      "⑤背景：AI技術の進化"
+    ]
+  },
+  "status": "ready"
+}
