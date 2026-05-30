@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-31",
+  "caption": "🚨 エロン・マスク氏、アメリカのAI データセンター技術で革命的進歩を発表！日本語でわかりやすく解説します。SpaceXやテスラが大幅に効率を向上させたということで、海外では大きな注目を集めています。🎥 動画はこちら→ https://www.youtube.com/watch?v=L2ENLtrBado",
+  "image": "daily-content/2026-05-31.png",
+  "source_url": "https://www.youtube.com/watch?v=L2ENLtrBado",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIデータセンター技術",
+    "conclusion": "効率大幅に向上",
+    "key_stat": "大幅な効率化",
+    "points": [
+      "①効率向上の背景：SpaceXの技術革新",
+      "②大幅な効率化：SpaceXとテスラの成果",
+      "③AIデータセンターの重要性：性能とコスト",
+      "④規模感：多大なデータ処理能力",
+      "⑤背景・競合・今後：海外での評価と期待"
+    ]
+  },
+  "status": "ready"
+}
