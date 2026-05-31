@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-01",
+  "caption": "海外の最新AI動向",
+  "image": "daily-content/2026-06-01.png",
+  "source_url": "https://www.youtube.com/watch?v=CNRUnW8T2I4",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIブレイクスルー",
+    "conclusion": "巨大な影響が期待される",
+    "key_stat": "Elon Musk氏のヒント",
+    "points": [
+      "🔍 AIブレイクスルーとは：新技術の開発",
+      "💻 重要性：人工知能の躍進",
+      "🌎 適用範囲：多岐にわたる",
+      "🚀 速さ：短期間での進化",
+      "👥 関連：Elon Musk氏の関係"
+    ]
+  },
+  "status": "ready"
+}
