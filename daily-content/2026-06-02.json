@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-02",
+  "caption": "🚨 海外ではすでに注目されている次世代型AIツール「Verdent AI」が話題！Claude、ChatGPT、Geminiがチームで働くこのツールの機能と特徴を、日本語でわかりやすく解説します。Verdent Aiの詳細はこちらから確認できます。🎥 動画はこちら→ https://www.youtube.com/watch?v=tPaLhhpD9rM",
+  "image": "daily-content/2026-06-02.png",
+  "source_url": "https://www.youtube.com/watch?v=tPaLhhpD9rM",
+  "infographic_data": {
+    "template": "list",
+    "title": "Verdent AI",
+    "conclusion": "Verdent AIの機能はAIの未来を切り拓く",
+    "points": [
+      "ClaudeとChatGPT、Geminiの3つのAIがチームで協力",
+      "高精度なタスクの自動化と分析が可能",
+      "ユーザーへのカスタマイズが容易",
+      "セキュリティに重点を置いた設計",
+      "サブスクリプションモデルで利用可能"
+    ]
+  },
+  "status": "ready"
+}
