@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-03",
+  "caption": "🚨 海外ではGPT-5.5の話題が沸騰ですが、Claude Opus 4.8が注目を集めています。日本語でわかりやすく解説します。",
+  "image": "daily-content/2026-06-03.png",
+  "source_url": "https://www.youtube.com/watch?v=AWw1u9yt1n0",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Claude Opus 4.8",
+    "conclusion": "AIの可能性が広がります",
+    "key_stat": "4.8",
+    "points": [
+      "①Claude Opus：AIモデル",
+      "②アップデート機能：非公開",
+      "③なぜ重要か：AIの可能性",
+      "④規模感：GPT-5.5と比較",
+      "⑤背景・競合・今後：Anthropic"
+    ]
+  },
+  "status": "ready"
+}
