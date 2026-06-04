@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-05",
+  "caption": "🔥 海外では大規模言語モデルが急速に進化しています。日本語でわかりやすく解説します。VDI Karlsruheの発表では、Lars Thomsenによる「Large Language Models」に関する研究が紹介されました。 🎥 動画はこちら→ https://www.youtube.com/watch?v=E6xVlVFBRQE",
+  "image": "daily-content/2026-06-05.png",
+  "source_url": "https://www.youtube.com/watch?v=E6xVlVFBRQE",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Large LanguageModels",
+    "conclusion": "言語モデルの進化",
+    "key_stat": "大規模言語モデル",
+    "points": [
+      "①言語モデル：定義",
+      "②モデル応用：主要機能",
+      "③モデルの重要性：意義",
+      "④モデル規模：数字",
+      "⑤モデル背景：競合"
+    ]
+  },
+  "status": "ready"
+}
