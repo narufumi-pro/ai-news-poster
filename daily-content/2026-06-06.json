@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-06",
+  "caption": "🚨 AIを巡る安全性はどうあるべきか。海外では警察活動でAIを使用していますが、懸念もあります。日本語でわかりやすく解説します。🎥 動画はこちら→ https://www.youtube.com/watch?v=9EXZ95a0BZk",
+  "image": "daily-content/2026-06-06.png",
+  "source_url": "https://www.youtube.com/watch?v=9EXZ95a0BZk",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIと警察",
+    "conclusion": "AIは警察活動を効率化する",
+    "points": [
+      "警察活動でAIを利用",
+      "犯罪解決率の向上",
+      "プライバシー保護の問題",
+      "人種差別的な判断の可能性",
+      "将来的に更なる活用が見られる"
+    ]
+  },
+  "status": "ready"
+}
