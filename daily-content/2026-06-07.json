@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-07",
+  "caption": "🔥 海外ではAI技術が急速に進化しています。2025年と2026年のAI比較を紹介します。",
+  "image": "daily-content/2026-06-07.png",
+  "source_url": "https://www.youtube.com/watch?v=d-VWicrvFYY",
+  "infographic_data": {
+    "template": "comparison",
+    "title": "2025 vs 2026",
+    "conclusion": "AIの進化が加速",
+    "left_label": "2025",
+    "right_label": "2026",
+    "left_points": [
+      "ツールの性能が低い",
+      "限られた機能",
+      "進化の開始"
+    ],
+    "right_points": [
+      "ツールの性能が高い",
+      "多様な機能",
+      "急速に進化"
+    ]
+  },
+  "status": "ready"
+}
