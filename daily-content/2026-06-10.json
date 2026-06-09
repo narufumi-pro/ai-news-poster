@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-10",
+  "caption": "⚡海外のAI動向！LLMのプロンプト方法をまとめてみました。日本語でわかりやすく解説します。海外ではAIが急速に進化しています。🎥 動画はこちら→ https://www.youtube.com/watch?v=j0rGcNc0gcc",
+  "image": "daily-content/2026-06-10.png",
+  "source_url": "https://www.youtube.com/watch?v=j0rGcNc0gcc",
+  "infographic_data": {
+    "template": "list",
+    "title": "LLMプロンプト",
+    "conclusion": "AIの理解を深めよう",
+    "points": [
+      "LLMとは：大規模言語モデル",
+      "プロンプトの重要性：質問作成の基礎",
+      "AIの応用：自然言語処理",
+      "学習方法：大量データ学習",
+      "将来性：人工知能の進化"
+    ]
+  },
+  "status": "ready"
+}
