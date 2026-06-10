@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-11",
+  "caption": "Appleの新しいSiri AIがChatGPTやGemini、Claudeを超えた！日本語でわかりやすく解説します。海外ではスタンドアロンAIチャットボットの終焉とまで呼ばれています。🎥 動画はこちら→ https://www.youtube.com/watch?v=NtQfGEPU0pc",
+  "image": "daily-content/2026-06-11.png",
+  "source_url": "https://www.youtube.com/watch?v=NtQfGEPU0pc",
+  "infographic_data": {
+    "template": "comparison",
+    "title": "Siri AI vs ChatGPT",
+    "conclusion": "Siri AIがスタンドアロンAIを超える",
+    "left_label": "Siri AI",
+    "right_label": "ChatGPT",
+    "left_points": [
+      "アップグレード",
+      "スタンドアロン超える",
+      "ユーザー便利"
+    ],
+    "right_points": [
+      "機能豊富",
+      "スタンドアロン",
+      "限界ある"
+    ]
+  },
+  "status": "ready"
+}
