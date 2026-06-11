@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-12",
+  "caption": "🚨 中国のダイヤモンドチップがAIの最大の問題を暴露！日本語でわかりやすく解説します。海外ではこの技術が注目されています。🎥 動画はこちら→ https://www.youtube.com/watch?v=nqawxp-nX54",
+  "image": "daily-content/2026-06-12.png",
+  "source_url": "https://www.youtube.com/watch?v=nqawxp-nX54",
+  "infographic_data": {
+    "template": "stat",
+    "title": "ダイヤモンドチップ",
+    "conclusion": "AIの問題解決",
+    "key_stat": "最大の問題",
+    "points": [
+      "①ダイヤモンドチップ：高性能",
+      "②AIの限界：計算能力",
+      "③新技術：高速化",
+      "④開発競争：中国と米国",
+      "⑤将来性：AIの進化"
+    ]
+  },
+  "status": "ready"
+}
