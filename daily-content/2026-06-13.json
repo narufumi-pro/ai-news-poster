@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-13",
+  "caption": "SlackとRelevance AI Agentの連携方法が公開されています。海外では注目しているテーマです。",
+  "image": "daily-content/2026-06-13.png",
+  "source_url": "https://www.youtube.com/watch?v=fydv-nGsneA",
+  "infographic_data": {
+    "template": "list",
+    "title": "SlackとRelevance AI",
+    "conclusion": "効率化を実現",
+    "points": [
+      "Slackとの連携方法",
+      "Relevance AI Agentの機能",
+      "効率化の効果",
+      "ビジネスへの応用",
+      "将来の展開"
+    ]
+  },
+  "status": "ready"
+}
