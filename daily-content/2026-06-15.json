@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-15",
+  "caption": "🚨 海外では新しいチップが登場！中国の新型ライトパワーチップはNvidiaより1,000倍速いと言われています。日本語でわかりやすく解説します。 🎥 動画はこちら→ https://www.youtube.com/watch?v=RL9BB4ojbSY",
+  "image": "daily-content/2026-06-15.png",
+  "source_url": "https://www.youtube.com/watch?v=RL9BB4ojbSY",
+  "infographic_data": {
+    "template": "stat",
+    "title": "中国の新型チップ",
+    "conclusion": "1,000倍速い",
+    "key_stat": "1,000倍速い",
+    "points": [
+      "新型チップ：ライトパワー駆動",
+      "主要機能：計算処理高速化",
+      "意義：Nvidia超え",
+      "規模感：1,000倍速",
+      "背景：中国の技術進歩"
+    ]
+  },
+  "status": "ready"
+}
