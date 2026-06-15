@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-16",
+  "caption": "🎥 動画はこちら→ https://www.youtube.com/watch?v=qr4H4N2FkE8",
+  "image": "daily-content/2026-06-16.png",
+  "source_url": "https://www.youtube.com/watch?v=qr4H4N2FkE8",
+  "infographic_data": {
+    "template": "list",
+    "title": "2027年のAI技術",
+    "conclusion": "AIの未来へ",
+    "points": [
+      "AIの自動化による効率化",
+      "人工知能による創造性の向上",
+      "セキュリティの強化",
+      "AI倫理の確立",
+      "産業界への大きな影響"
+    ]
+  },
+  "status": "ready"
+}
