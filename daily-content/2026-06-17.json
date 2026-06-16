@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-17",
+  "caption": "🔥 海外ではAIが何が可能かを探索する動画が話題に！日本語でわかりやすく解説します。10回、科学者が「不可能」と言ったことで、AIが達成しました。ここでは、その中から5つのポイントをピックアップします。🎥 動画はこちら→ https://www.youtube.com/watch?v=pPPg8eD3teE",
+  "image": "daily-content/2026-06-17.png",
+  "source_url": "https://www.youtube.com/watch?v=pPPg8eD3teE",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIの10の不可能を達成",
+    "conclusion": "AIが不可能とされた10の事実",
+    "points": [
+      "1. ゲームのマスター",
+      "2. 医療データの分析",
+      "3. 自動運転の実現",
+      "4. ロボットの制御",
+      "5. 人間の会話の理解"
+    ]
+  },
+  "status": "ready"
+}
