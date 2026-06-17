@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-18",
+  "caption": "⚡ 海外ではAIの透明性に関する議論が進んでいます。日本語でわかりやすく解説します。 #FTC2025でのWojciech Samek氏の発表では、大規模言語モデル(LLM)の意思決定プロセスを理解することがAIの最も大きな課題であるとされています。 🎥 動画はこちら→ https://www.youtube.com/watch?v=Wn6XXJF6wtg",
+  "image": "daily-content/2026-06-18.png",
+  "source_url": "https://www.youtube.com/watch?v=Wn6XXJF6wtg",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIの透明性",
+    "conclusion": "LLMの意思決定プロセスを理解することが重要",
+    "key_stat": "LLM",
+    "points": [
+      "①LLM：大規模言語モデル",
+      "②LLMの意思決定：複雑なアルゴリズム",
+      "③LLMの重要性：AIの最も大きな課題",
+      "④LLMの規模感：大量のデータを処理",
+      "⑤LLMの背景：AIの未来を決める"
+    ]
+  },
+  "status": "ready"
+}
