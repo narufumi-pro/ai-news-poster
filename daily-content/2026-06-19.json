@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-19",
+  "caption": "🚨 海外では、米国政府が突然Anthropicのトップモデルを停止させました。日本語でわかりやすく解説します。AnthropicはAI技術の先端を走る企業ですが、米国政府の突然の介入が話題となっています。",
+  "image": "daily-content/2026-06-19.png",
+  "source_url": "https://www.youtube.com/watch?v=gbUUF8HACY0",
+  "infographic_data": {
+    "template": "list",
+    "title": "Anthropic停止",
+    "conclusion": " Anthropic停止の意味",
+    "points": [
+      "Anthropicとは：AI企業",
+      "停止理由：政府の介入",
+      "影響範囲：AI研究",
+      "将来的な影響：AI開発",
+      "米国政府の立場：規制強化"
+    ]
+  },
+  "status": "ready"
+}
