@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-23",
+  "caption": "⚡ 日本語でわかりやすく解説します。海外では、イギリスでAIツールを利用して古い計画書をデジタル化し、地方自治体での手作業を削減しています。このAIツールは、25万時間の手作業を節約できることが分かりました。🤯 日本語でわかりやすく解説します。🎥 動画はこちら→ https://www.youtube.com/watch?v=gVNZ3CnVqsA",
+  "image": "daily-content/2026-06-23.png",
+  "source_url": "https://www.youtube.com/watch?v=gVNZ3CnVqsA",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIツールの成果",
+    "conclusion": "労働時間削減",
+    "key_stat": "25万時間節約",
+    "points": [
+      "①AIツール：Extract",
+      "②デジタル化：古い計画書",
+      "③効果：手作業削減",
+      "④規模：25万時間",
+      "⑤背景：イギリスでの導入"
+    ]
+  },
+  "status": "ready"
+}
