@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-24",
+  "caption": "🚨 中国がフロンティアAIのコストを6倍軽減した。日本語でわかりやすく解説します。🎥 動画はこちら→ https://www.youtube.com/watch?v=uxtjkT6bZqU",
+  "image": "daily-content/2026-06-24.png",
+  "source_url": "https://www.youtube.com/watch?v=uxtjkT6bZqU",
+  "infographic_data": {
+    "template": "stat",
+    "title": "フロンティアAI コスト削減",
+    "conclusion": "コストが6倍軽減",
+    "key_stat": "6倍",
+    "points": [
+      "フロンティアAI：最新のAI技術",
+      "コスト削減：6倍軽減",
+      "影響：産業界への波及",
+      "比較：従来のAI技術との差",
+      "背景：中国のAI技術の進歩"
+    ]
+  },
+  "status": "ready"
+}
