@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-25",
+  "caption": "🚨 人工知能の5年間の進化を解説！日本語でわかりやすく解説します。海外では人工知能が最も快速に進化している技術の一つです。🎥 動画はこちら→ https://www.youtube.com/watch?v=EAFamlCmN0I",
+  "image": "daily-content/2026-06-25.png",
+  "source_url": "https://www.youtube.com/watch?v=EAFamlCmN0I",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIの進化",
+    "conclusion": "人工知能はますます進化します",
+    "key_stat": "5年以内に大きな変化",
+    "points": [
+      "①人工知能の定義：人間の知能を再現",
+      "②主要機能：学習・認識・判断",
+      "③重要性：人間の生活を改善",
+      "④規模感：世界規模での利用",
+      "⑤背景：技術の迅速な進化"
+    ]
+  },
+  "status": "ready"
+}
