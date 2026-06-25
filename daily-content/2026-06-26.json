@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-26",
+  "caption": "🚨 海外ではAIの電力消費が大量に発生しているため、_data centers in space_を建設するという抜本的な解決策が検討されるようになっています。日本語でわかりやすく解説します。🎥 動画はこちら→ https://www.youtube.com/watch?v=50woGlCk7KQ",
+  "image": "daily-content/2026-06-26.png",
+  "source_url": "https://www.youtube.com/watch?v=50woGlCk7KQ",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Space AIデータセンター",
+    "conclusion": "新たなAIの未来",
+    "key_stat": "電力消費大量",
+    "points": [
+      "①データセンター：大量のデータを処理",
+      "②Space AI：宇宙でのAI開発",
+      "③省エネルギー：電力消費の削減",
+      "④スケーラビリティ：拡張性のある設計",
+      "⑤安全性：サイバー攻撃への対策"
+    ]
+  },
+  "status": "ready"
+}
