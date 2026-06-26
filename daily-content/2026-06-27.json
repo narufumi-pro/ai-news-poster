@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-27",
+  "caption": "🚨 海外では新しいAIモデルが話題！日本語でわかりやすく解説します。Fableに匹敵する新しいモデルが登場。ChatGPT、Claude、Geminiなど200以上のモデルを一つの価格で使用可能に。",
+  "image": "daily-content/2026-06-27.png",
+  "source_url": "https://www.youtube.com/watch?v=zMVZvgCOr40",
+  "infographic_data": {
+    "template": "stat",
+    "title": "新しいAIモデル",
+    "conclusion": "新しいAIモデル登場",
+    "key_stat": "200以上のモデル",
+    "points": [
+      "新しいAIモデル：Fableに匹敵する",
+      "主要機能：ChatGPT、Claude、Geminiなど",
+      "意義・インパクト：一つの価格で使用可能",
+      "規模感：200以上のモデル",
+      "背景・競合・今後：新しいAIモデルが登場"
+    ]
+  },
+  "status": "ready"
+}
