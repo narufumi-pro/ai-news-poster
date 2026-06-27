@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-28",
+  "caption": "Googleの量子AIが物理学の法則を破った？日本語でわかりやすく解説します。海外ではこのニュースが大きな注目を集めています。",
+  "image": "daily-content/2026-06-28.png",
+  "source_url": "https://www.youtube.com/watch?v=HkHYGFuZKrc",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Googleの量子AI",
+    "conclusion": "物理学の法則を破った",
+    "key_stat": "物理学の法則を破った",
+    "points": [
+      "Googleの量子AI：量子コンピューターによるAI",
+      "何ができるか：従来の物理学の法則を超える計算",
+      "なぜ重要か：新しい物理学的発見や技術開発",
+      "規模感：世界初の量子AIによる物理学的成果",
+      "背景・競合・今後：量子AIの進化が続く"
+    ]
+  },
+  "status": "ready"
+}
