@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-29",
+  "caption": "🔥 AIの最新課金モデルを紹介！日本語でわかりやすく解説します！海外ではAIの課金モデルが注目されています。🎥 動画はこちら→ https://www.youtube.com/watch?v=z_n7HDnfPBM",
+  "image": "daily-content/2026-06-29.png",
+  "source_url": "https://www.youtube.com/watch?v=z_n7HDnfPBM",
+  "infographic_data": {
+    "template": "comparison",
+    "title": "AI課金モデル比較",
+    "conclusion": "3つのモデル比較",
+    "left_label": "ChatGPT",
+    "right_label": "Claude",
+    "left_points": [
+      "質問回答",
+      "会話作成",
+      "テキスト生成"
+    ],
+    "right_points": [
+      "テキスト生成",
+      "会話作成",
+      "翻訳"
+    ]
+  },
+  "status": "ready"
+}
