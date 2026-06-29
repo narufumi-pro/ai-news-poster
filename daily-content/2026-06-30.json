@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-30",
+  "caption": "🔥 中国の人工太陽が核融合のブレイクスルーを達成！日本語でわかりやすく解説します。海外では、東方超導トカマク（EAST）が核融合の新記録を樹立したことが話題になっている。🎥 動画はこちら→ https://www.youtube.com/watch?v=smCyR7d-Ak8",
+  "image": "daily-content/2026-06-30.png",
+  "source_url": "https://www.youtube.com/watch?v=smCyR7d-Ak8",
+  "infographic_data": {
+    "template": "stat",
+    "title": "中国の核融合ブレイクスルー",
+    "conclusion": "中国の核融合研究が大躍進",
+    "key_stat": "核融合の新記録",
+    "points": [
+      "EAST：東方超導トカマクの略称",
+      "核融合：原子核が融合する反応",
+      "ブレイクスルー：大きな突破",
+      "新記録：世界の核融合研究の最前線",
+      "中国の核融合研究：世界を牽引する力"
+    ]
+  },
+  "status": "ready"
+}
