@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-01",
+  "caption": "Google DeepMindの5人のシニアリサーチャーが、LinkedInプロフィールを更新しました。Alphabetの損失は270ドルに達しました。🎥 動画はこちら→ https://www.youtube.com/watch?v=qVrnhXdRBd8",
+  "image": "daily-content/2026-07-01.png",
+  "source_url": "https://www.youtube.com/watch?v=qVrnhXdRBd8",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Google DeepMind",
+    "conclusion": "Googleの競争が激化",
+    "key_stat": "5人のシニアリサーチャー",
+    "points": [
+      "Google DeepMind：人工知能研究",
+      "LinkedInプロフィール更新：新会社への移籍",
+      "Alphabetの損失：270ドル",
+      "Googleの所有権：14%",
+      "競合の激化：人工知能開発"
+    ]
+  },
+  "status": "ready"
+}
