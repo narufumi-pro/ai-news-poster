@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-02",
+  "caption": "🚨 AI Secrets Challengeの2日目では、100億ドル規模のブレークスルーについて学びます。日本語でわかりやすく解説します。海外ではこのテクノロジーが大きな期待を集めています。",
+  "image": "daily-content/2026-07-02.png",
+  "source_url": "https://www.youtube.com/watch?v=o7Zq5wenpEk",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIブレークスルー",
+    "conclusion": "テクノロジーの進化がもたらす未来",
+    "key_stat": "100億ドル",
+    "points": [
+      "①AIの定義：人工知能",
+      "②主要機能：自動化や分析",
+      "③意義：革新的なソリューション",
+      "④規模感：大量のデータ処理",
+      "⑤背景：急速な発展と応用"
+    ]
+  },
+  "status": "ready"
+}
