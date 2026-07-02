@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-03",
+  "caption": "🚨 エロン・マスクが近い将来的にはGrokのブレークスルーに期待を寄せており、OpenAIやAnthropicとの競争が注目されています。日本語でわかりやすく解説します。海外ではAI技術の進化が急速に進んでいます。\n🎥 動画はこちら→ https://www.youtube.com/watch?v=gsGN-CmDCRA",
+  "image": "daily-content/2026-07-03.png",
+  "source_url": "https://www.youtube.com/watch?v=gsGN-CmDCRA",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Grokのブレークスルー",
+    "conclusion": "Grokは近い将来にブレークスルーする",
+    "key_stat": "2年間の開発",
+    "points": [
+      "①Grok：AIプラットフォーム",
+      "②エロン・マスクの期待：革新技術",
+      "③競争：OpenAIとAnthropic",
+      "④進展：二年間の開発",
+      "⑤背景：AI技術の進化"
+    ]
+  },
+  "status": "ready"
+}
