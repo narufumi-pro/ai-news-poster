@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-04",
+  "caption": "🚨 中国のAI技術が西側を抜いています！日本語でわかりやすく解説します。中国は現在、世界のAI競争において重要な役割を果たしています。海外では中国のAI技術が急速に進化しているようです。🎥 動画はこちら→ https://www.youtube.com/watch?v=v09cf-dWVws",
+  "image": "daily-content/2026-07-04.png",
+  "source_url": "https://www.youtube.com/watch?v=v09cf-dWVws",
+  "infographic_data": {
+    "template": "stat",
+    "title": "中国のAIブレークスルー",
+    "conclusion": "中国のAIが西側を上回る",
+    "key_stat": "中国のAI技術が進化",
+    "points": [
+      "①中国のAI：定義",
+      "②AI技術の進化：中国の強み",
+      "③なぜ重要か：世界のAI競争",
+      "④規模感：中国のAI投資額",
+      "⑤背景：中国のAI戦略"
+    ]
+  },
+  "status": "ready"
+}
