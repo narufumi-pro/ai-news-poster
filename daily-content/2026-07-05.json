@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-05",
+  "caption": "🚨 海外ではOpenAIのCEOがAGIの将来について警告しています。日本語でわかりやすく解説します。 OpenAIの研究によるAGIの進化について紹介します。 🎥 動画はこちら→ https://www.youtube.com/watch?v=nRzMqBiF5ks",
+  "image": "daily-content/2026-07-05.png",
+  "source_url": "https://www.youtube.com/watch?v=nRzMqBiF5ks",
+  "infographic_data": {
+    "template": "stat",
+    "title": "OpenAIのAGI",
+    "conclusion": "AIの未来が変わります",
+    "key_stat": "CEOが警告",
+    "points": [
+      "①AGI：人工一般知能の定義",
+      "②将来の可能性：革命的変化",
+      "③警告の意味：リスクと挑戦",
+      "④進化のスピード：急速な変化",
+      "⑤将来の展開：期待と不安"
+    ]
+  },
+  "status": "ready"
+}
