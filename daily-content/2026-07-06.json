@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-06",
+  "caption": "🔥 海外ではAI投資が前代未聞のレベルに！日本語でわかりやすく解説します。AIの将来性が高まっています。🎥 動画はこちら→ https://www.youtube.com/watch?v=eaJMLRWxrU4",
+  "image": "daily-content/2026-07-06.png",
+  "source_url": "https://www.youtube.com/watch?v=eaJMLRWxrU4",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI投資",
+    "conclusion": "AI投資が大幅に増加",
+    "key_stat": "510億ドル",
+    "points": [
+      "①AI：人工知能のこと",
+      "②AI投資：企業がAIに投資すること",
+      "③なぜ重要か：技術革新とビジネス成長",
+      "④規模感：過去最大の半期",
+      "⑤背景：世界的なAIブーム"
+    ]
+  },
+  "status": "ready"
+}
