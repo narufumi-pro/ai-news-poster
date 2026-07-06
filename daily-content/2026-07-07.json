@@ -1,0 +1,19 @@
+{
+  "date": "2026-07-07",
+  "caption": "🚨 Google Gemini、ChatGPT、Claudeの最新アップデート！日本語でわかりやすく解説します。海外では新しいAIスタジオのアップデートが話題です。🎥 動画はこちら→ https://www.youtube.com/watch?v=RY0lEtm5zKk",
+  "image": "daily-content/2026-07-07.png",
+  "source_url": "https://www.youtube.com/watch?v=RY0lEtm5zKk",
+  "infographic_data": {
+    "template": "list",
+    "title": "新しいAIアップデート",
+    "conclusion": "AIの進化を見逃すな",
+    "points": [
+      "Google Geminiのアップデート",
+      "ChatGPTの新機能",
+      "Claudeのアップデート",
+      "AIスタジオの最新情報",
+      "今後のAIの展開"
+    ]
+  },
+  "status": "ready"
+}
