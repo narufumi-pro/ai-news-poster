@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-08",
+  "caption": "🚨 AIモデルが大躍進！AnthropicとOpenAIの最新情報を日本語でわかりやすく解説します。海外ではAIのブレークスルーが起こっています。",
+  "image": "daily-content/2026-07-08.png",
+  "source_url": "https://www.youtube.com/watch?v=OX-pPVUlwJw",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIブレークスルー",
+    "conclusion": "AIの進化が加速",
+    "key_stat": "Fable 5の登場",
+    "points": [
+      "Fable 5：新しいセーフガード",
+      "OpenAI：最新AIモデル",
+      " Anthropicの挑戦：AIの安全性",
+      "AIの将来：可能性と課題",
+      "世界の反応：期待と懸念"
+    ]
+  },
+  "status": "ready"
+}
