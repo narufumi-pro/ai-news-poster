@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-09",
+  "caption": "🚨 海外ではAIのセキュリティ開発が進化しています。日本語でわかりやすく解説します。The Cyber Proが紹介する、Episode 374ではAIセキュリティの最新進展について学びましょう。 🎥 動画はこちら→ https://www.youtube.com/watch?v=_VsVUiIweac",
+  "image": "daily-content/2026-07-09.png",
+  "source_url": "https://www.youtube.com/watch?v=_VsVUiIweac",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIセキュリティの進化",
+    "conclusion": "AIセキュリティは速いペースで進化しています",
+    "key_stat": "374回",
+    "points": [
+      "①AIセキュリティ：最新技術",
+      "②進化の内容：AI保護の向上",
+      "③重要性：セキュリティの強化",
+      "④規模感：急速な進化",
+      "⑤背景： технологーの発展"
+    ]
+  },
+  "status": "ready"
+}
