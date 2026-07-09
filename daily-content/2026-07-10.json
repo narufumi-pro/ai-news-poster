@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-10",
+  "caption": "⚡ 海外では脳.signalからタイプされたテキストを読み取るAIが開発されました。日本語でわかりやすく解説します。脳外から捕捉されたsignalでAIが人々の入力内容を読み取ります。脳に埋め込むimplantは不要です。",
+  "image": "daily-content/2026-07-10.png",
+  "source_url": "https://www.youtube.com/watch?v=uGzFxNrea8w",
+  "infographic_data": {
+    "template": "stat",
+    "title": "脳読み取りAI",
+    "conclusion": "新時代の始まり",
+    "key_stat": "100% 脳外捕捉",
+    "points": [
+      "① 脳信号: 外部から読み取り",
+      "② タイピング読み取り: テキスト内容を推測",
+      "③ 重要性: 新しいヒューマンインターフェイス",
+      "④ 規模: 未来に向けた基盤技術",
+      "⑤ 背景: 研究開発の進展"
+    ]
+  },
+  "status": "ready"
+}
