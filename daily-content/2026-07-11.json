@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-11",
+  "caption": "🔥 AIの内部を覗いてみた！日本語でわかりやすく解説します。海外ではGoogle DeepMindの研究が注目されています。AIの中には数値の配列しかないことが発覚しました。 🎥 動画はこちら→ https://www.youtube.com/watch?v=1DtMiRKg-cs",
+  "image": "daily-content/2026-07-11.png",
+  "source_url": "https://www.youtube.com/watch?v=1DtMiRKg-cs",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI内部",
+    "conclusion": "数値の世界",
+    "key_stat": "数値の配列",
+    "points": [
+      "① AI内部：数値の世界",
+      "② 主要機能：学習と予測",
+      "③ 意義：人間の意思決定をサポート",
+      "④ 規模感：膨大なデータ",
+      "⑤ 背景：AIの進化"
+    ]
+  },
+  "status": "ready"
+}
