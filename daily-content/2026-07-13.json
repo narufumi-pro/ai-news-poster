@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-13",
+  "caption": "DeepSeek-V2の効率の秘密はMulti-Head Latent Attentionにあります",
+  "image": "daily-content/2026-07-13.png",
+  "source_url": "https://www.youtube.com/watch?v=19KDJZnO32A",
+  "infographic_data": {
+    "template": "stat",
+    "title": "DeepSeek-V2",
+    "conclusion": "高効率を実現",
+    "key_stat": "革命的な注意メカニズム",
+    "points": [
+      "新しい注意メカニズム：Multi-Head Latent Attention",
+      "従来のKV Cache Memory問題を解決",
+      "高い効率を実現する",
+      "DeepSeek-V2の重要性",
+      "将来的に大きな影響を与える"
+    ]
+  },
+  "status": "ready"
+}
