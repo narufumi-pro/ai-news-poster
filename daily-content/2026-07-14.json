@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-14",
+  "caption": "🔥 MITの研究者たちが、ジェネレーティブAIモデルを悪意のある機能に対して評価する画期的な監査技術を開発しました！日本語でわかりやすく解説します。海賊はAIの安全性について話します。🎥 動画はこちら→ https://www.youtube.com/watch?v=AuzCnUYJjLo",
+  "image": "daily-content/2026-07-14.png",
+  "source_url": "https://www.youtube.com/watch?v=AuzCnUYJjLo",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI安全性の新時代",
+    "conclusion": "AI安全性が高まります",
+    "key_stat": "MITが開発",
+    "points": [
+      "①ジェネレーティブAIモデルとは：画像や文章を生成するAI",
+      "②悪意のある機能とは：個人情報を盗んだりする機能",
+      "③なぜ重要か：安全性が高まるため",
+      "④規模感：多くのAIモデルが対象",
+      "⑤背景・競合・今後：AI技術が発展"
+    ]
+  },
+  "status": "ready"
+}
