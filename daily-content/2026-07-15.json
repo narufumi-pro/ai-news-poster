@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-15",
+  "caption": "🎥 動画はこちら→ https://www.youtube.com/watch?v=AuzCnUYJjLo",
+  "image": "daily-content/2026-07-15.png",
+  "source_url": "https://www.youtube.com/watch?v=AuzCnUYJjLo",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI安全性の新たな時代",
+    "conclusion": "AI安全性が向上します",
+    "key_stat": "AIモデルの監査技術",
+    "points": [
+      "①AIモデルの監査：悪性コードの検出",
+      "②主要機能：セキュリティの強化",
+      "③なぜ重要か：AIを安全に使用",
+      "④規模感：MITの研究成果",
+      "⑤背景：AI安全性の需要増加"
+    ]
+  },
+  "status": "ready"
+}
