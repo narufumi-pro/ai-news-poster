@@ -1,0 +1,19 @@
+{
+  "date": "2026-07-16",
+  "caption": "🚨 AppleとOpenAIの間で、AIデバイスに関する特許訴訟が激化しています。日本語でわかりやすく解説します。海外では、AI技術の進歩により、企業間の知的財産争いが顕著になっています。🎥 動画はこちら→ https://www.youtube.com/watch?v=euu-Bu04m64",
+  "image": "daily-content/2026-07-16.png",
+  "source_url": "https://www.youtube.com/watch?v=euu-Bu04m64",
+  "infographic_data": {
+    "template": "list",
+    "title": "Apple vs OpenAI",
+    "conclusion": "AI関連の特許訴訟",
+    "points": [
+      "Appleの特許訴訟",
+      "OpenAIの反論",
+      "_screenlessデバイス",
+      "AI技術の進歩",
+      "知的財産争い"
+    ]
+  },
+  "status": "ready"
+}
