@@ -1,0 +1,19 @@
+{
+  "date": "2026-07-17",
+  "caption": "2025年、AIが仕事を変える5つのツールがあります。日本語でわかりやすく解説します。海外ではAIの活用が進んでいますが、日本でも注目されるべきです。",
+  "image": "daily-content/2026-07-17.png",
+  "source_url": "https://www.youtube.com/watch?v=m2fh3DxoE5I",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIが仕事を変える5ツール",
+    "conclusion": "AIの活用を検討しましょう",
+    "points": [
+      "ツール1：自動化",
+      "ツール2：分析",
+      "ツール3：創造",
+      "ツール4：コミュニケーション",
+      "ツール5：最適化"
+    ]
+  },
+  "status": "ready"
+}
