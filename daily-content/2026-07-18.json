@@ -1,0 +1,19 @@
+{
+  "date": "2026-07-18",
+  "caption": "AIアプリの融合が進んでいます。日本語でわかりやすく解説します。",
+  "image": "daily-content/2026-07-18.png",
+  "source_url": "https://www.youtube.com/watch?v=Ypz0z5D7nZ4",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIアプリの融合",
+    "conclusion": "AIアプリの融合が進んでいます",
+    "points": [
+      "ChatGPT：会話型AI",
+      "Claude：文章生成AI",
+      "Gemini：検索型AI",
+      "Grok：分析型AI",
+      "Writingmate：AIアプリの融合プラットフォーム"
+    ]
+  },
+  "status": "ready"
+}
