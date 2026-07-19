@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-20",
+  "caption": "🔥 Googleの量子AIが突破！日本語でわかりやすく解説します。海外では話題の量子AIについて紹介します。🎥 動画はこちら→ https://www.youtube.com/watch?v=4bBuiXRydcw",
+  "image": "daily-content/2026-07-20.png",
+  "source_url": "https://www.youtube.com/watch?v=4bBuiXRydcw",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Googleの量子AI",
+    "conclusion": "量子AIが突破",
+    "key_stat": "Googleの量子AI",
+    "points": [
+      "①量子AI：Googleの新技術",
+      "②量子AIの特徴：高速計算",
+      "③なぜ重要か：AIの進化",
+      "④規模感：世界的注目",
+      "⑤背景・競合・今後：開発競争"
+    ]
+  },
+  "status": "ready"
+}
