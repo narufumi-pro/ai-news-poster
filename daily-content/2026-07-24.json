@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-24",
+  "caption": "🚨 海外ではGrok 4.5とMuse 1.1がAIの最前線を牽引しています。日本語でわかりやすく解説します。\nGrok 4.5とMuse 1.1は、従来のAIに比べて非常に低コストで近エインシュタインレベルの知能に到達します。🎥 動画はこちら→ https://www.youtube.com/watch?v=K5muRiUEe2I",
+  "image": "daily-content/2026-07-24.png",
+  "source_url": "https://www.youtube.com/watch?v=K5muRiUEe2I",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Grok 4.5 & Muse 1.1",
+    "conclusion": "低コストで近エインシュタインレベルのAI",
+    "key_stat": "低コスト",
+    "points": [
+      "①Grok 4.5：AIの新しいフロンティア",
+      "②Muse 1.1：低コストの高知能",
+      "③低コストで高性能：従来のAIと比較",
+      "④近エインシュタインレベルの知能：可能性",
+      "⑤将来のAI開発：新たな道"
+    ]
+  },
+  "status": "ready"
+}
