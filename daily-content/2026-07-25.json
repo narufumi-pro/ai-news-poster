@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-25",
+  "caption": "🔥 AIの最前線！Grok 4.5とMuse 1.1の登場で、人工知能のインテリジェンスのコストが大幅に下がりました。日本語でわかりやすく解説します。海外では、近い将来にEinsteinレベルのAIが現れそうです。🎥 動画はこちら→ https://www.youtube.com/watch?v=K5muRiUEe2I",
+  "image": "daily-content/2026-07-25.png",
+  "source_url": "https://www.youtube.com/watch?v=K5muRiUEe2I",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Grok 4.5とMuse 1.1",
+    "conclusion": "AIの新しい時代",
+    "key_stat": "EinsteinレベルのAI",
+    "points": [
+      "①Grok 4.5：AIの最前線",
+      "②Muse 1.1：コスト削減",
+      "③インテリジェンス：大幅向上",
+      "④将来性：幅広い応用",
+      "⑤海外の動向：注目度増加"
+    ]
+  },
+  "status": "ready"
+}
