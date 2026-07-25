@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-26",
+  "caption": "🎥 動画はこちら→ https://www.youtube.com/watch?v=fMMCOo4YT2A",
+  "image": "daily-content/2026-07-26.png",
+  "source_url": "https://www.youtube.com/watch?v=fMMCOo4YT2A",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI Blackboard",
+    "conclusion": "教育の変化を導く",
+    "key_stat": "手書きをインタラクティブ化",
+    "points": [
+      "①AI技術：手書き認識",
+      "②主要機能：インタラクティブな授業",
+      "③意義：教育の効率化",
+      "④規模感：WAIC 2026で披露",
+      "⑤背景：中国のAI教育への期待"
+    ]
+  },
+  "status": "ready"
+}
