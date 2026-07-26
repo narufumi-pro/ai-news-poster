@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-27",
+  "caption": "🚨 海外では半導体業界で大きな動きがありました。TSMCが懸念していた中国の最新動向について、日本語でわかりやすく解説します。",
+  "image": "daily-content/2026-07-27.png",
+  "source_url": "https://www.youtube.com/watch?v=3wcU_J810mE",
+  "infographic_data": {
+    "template": "stat",
+    "title": "中国の半導体業界",
+    "conclusion": "大きな進展",
+    "key_stat": "中国の半導体",
+    "points": [
+      "半導体業界のルール",
+      "中国の最新動向",
+      "TSMCの懸念",
+      "業界への影響",
+      "中国の半導体技術"
+    ]
+  },
+  "status": "ready"
+}
