@@ -1,0 +1,19 @@
+{
+  "date": "2026-07-28",
+  "caption": "詳細を知りたい方はこちらの動画をチェック！🎥 動画はこちら→ https://www.youtube.com/watch?v=-vBfmWlzlmg",
+  "image": "daily-content/2026-07-28.png",
+  "source_url": "https://www.youtube.com/watch?v=-vBfmWlzlmg",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIの進化",
+    "conclusion": "AIはこれからも進化し続けます",
+    "points": [
+      "Claude Opus 5：新しいAIモデル",
+      "GoogleのQuantum AI：量子コンピューティングの進化",
+      "Kimi K3 Crash：AIとのコラボレーション",
+      "Quantum Breakthrough：量子コンピューティングのブレークスルー",
+      "その他のAIの進化"
+    ]
+  },
+  "status": "ready"
+}
