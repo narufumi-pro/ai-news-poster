@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-29",
+  "caption": "🚨 中国で話題のロボットが登場！日本語でわかりやすく解説します。海外では13,000人以上が注文したと報告されているロボットです。🎥 動画はこちら→ https://www.youtube.com/watch?v=2zpuyR58BdY",
+  "image": "daily-content/2026-07-29.png",
+  "source_url": "https://www.youtube.com/watch?v=2zpuyR58BdY",
+  "infographic_data": {
+    "template": "stat",
+    "title": "ロボットの爆発的人気",
+    "conclusion": "未来のロボット技術の到達点",
+    "key_stat": "13000人以上が注文",
+    "points": [
+      "①ヒューマノイドロボットの定義：人間のような外見",
+      "②高度なAIによる動作：自然な挙動",
+      "③なぜ重要か：人間と共存できる技術",
+      "④規模感：中国での一斉注文",
+      "⑤背景：ロボット工学の進歩"
+    ]
+  },
+  "status": "ready"
+}
