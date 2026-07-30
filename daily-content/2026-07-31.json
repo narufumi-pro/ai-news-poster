@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-31",
+  "caption": "🚨 イランの石油産業がAIを活用し、59%の生産量増加を達成！日本語でわかりやすく解説します。海外では、戦争の影響を受けながらもテクノロジーが石油産業を支えているようです。🎥 動画はこちら→ https://www.youtube.com/watch?v=CC87SwOdT8c",
+  "image": "daily-content/2026-07-31.png",
+  "source_url": "https://www.youtube.com/watch?v=CC87SwOdT8c",
+  "infographic_data": {
+    "template": "stat",
+    "title": "イランのAIブレークスルー",
+    "conclusion": "AIにより石油産業が変わりつつあります",
+    "key_stat": "59%の生産量増加",
+    "points": [
+      "イランの石油産業がAIを活用",
+      "石油生産量を大幅に増加",
+      "戦争の中でもテクノロジーによって変化",
+      "59%の増加は大きなインパクト",
+      "イランの石油産業の将来への影響"
+    ]
+  },
+  "status": "ready"
+}
