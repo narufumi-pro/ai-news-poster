@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-01",
+  "caption": "🚨 海外では、LLMの正確性について検討が進んでいます。日本語でわかりやすく解説します。GPT-2は文で誤った動詞を予測します。このミスの原因を探るために、モデルの出力から各層を追跡しました。🎥 動画はこちら→ https://www.youtube.com/watch?v=ArNhj403oDk",
+  "image": "daily-content/2026-08-01.png",
+  "source_url": "https://www.youtube.com/watch?v=ArNhj403oDk",
+  "infographic_data": {
+    "template": "stat",
+    "title": "LLMミスの分析",
+    "conclusion": "LLMの限界",
+    "key_stat": "GPT-2予測誤り",
+    "points": [
+      "①LLM：言語モデル",
+      "②動詞予測：文脈解析",
+      "③誤り原因：層の分析",
+      "④影響範囲：正確性への影響",
+      "⑤今後の課題：高精度化"
+    ]
+  },
+  "status": "ready"
+}
