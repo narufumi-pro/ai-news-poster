@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-02",
+  "caption": "🚨 イランの石油産業がAI搭載で回復！日本語でわかりやすく解説します。海外ではイランが、新たな国内開発AIシステムを導入し、石油の回収率を59%向上させたと報告しています。🎥 動画はこちら→ https://www.youtube.com/watch?v=CC87SwOdT8c",
+  "image": "daily-content/2026-08-02.png",
+  "source_url": "https://www.youtube.com/watch?v=CC87SwOdT8c",
+  "infographic_data": {
+    "template": "stat",
+    "title": "イランのAIによる石油産業回復",
+    "conclusion": "AI導入で産業回復",
+    "key_stat": "59%の回収率向上",
+    "points": [
+      "①AIシステム：国内開発",
+      "②石油産業への応用：回収率向上",
+      "③重要性：産業の回復",
+      "④規模：59%の向上",
+      "⑤背景：西アジア情勢"
+    ]
+  },
+  "status": "ready"
+}
