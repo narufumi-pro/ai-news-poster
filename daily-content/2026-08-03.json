@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-03",
+  "caption": "🚨 海外で話題のAIモデル4種について、日本語でわかりやすく解説します。GPT-6、Gemini 4、Meta Avocado、Anthropicについて、確認済み情報と未確認情報を比較します。日本語でわかりやすく解説します。海外ではまだ情報が少ない状況ですが、現在の最新情報をまとめてみました。🎥 動画はこちら→ https://www.youtube.com/watch?v=g0MvsB3Z9Rs",
+  "image": "daily-content/2026-08-03.png",
+  "source_url": "https://www.youtube.com/watch?v=g0MvsB3Z9Rs",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIモデルル머",
+    "conclusion": "確認情報と未確認情報",
+    "points": [
+      "GPT-6：次世代モデル",
+      "Gemini 4：AIの進化",
+      "Meta Avocado：新機能",
+      "Anthropic：安全性重視",
+      "未確認情報：今後の予想"
+    ]
+  },
+  "status": "ready"
+}
