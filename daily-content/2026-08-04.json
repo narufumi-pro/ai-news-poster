@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-04",
+  "caption": "🚨 Googleの研究者がAIモデルをスマートフォンで動かす大きなブレークスルーを発見した！日本語でわかりやすく解説します。海外では今話題のこの技術が、AIの未来を変える可能性を持っています。🎥 動画はこちら→ https://www.youtube.com/watch?v=5EvFYqb5tKg",
+  "image": "daily-content/2026-08-04.png",
+  "source_url": "https://www.youtube.com/watch?v=5EvFYqb5tKg",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Google AIブレークスルー",
+    "conclusion": "AIの未来が変わります",
+    "key_stat": "大規模AIモデルをスマートフォンで動かせる",
+    "points": [
+      "①Googleの研究：新しい手法の開発",
+      "②大規模AIモデル：複雑な処理をスマートフォンで実行",
+      "③インパクト：AIの普及を加速化",
+      "④規模感：将来のスマートフォン性能の向上",
+      "⑤背景：AI技術の進化による変化"
+    ]
+  },
+  "status": "ready"
+}
