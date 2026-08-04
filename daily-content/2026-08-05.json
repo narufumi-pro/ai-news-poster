@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-05",
+  "caption": "🔥 海外では、2.8兆パラメータモデルによって6倍の高速化が実現していると話題になっている。日本語でわかりやすく解説します。北京の研究所がClaudeを参考にしてこの成果をあげたのか、または新しいハイブリッドTransformerアーキテクチャが実現したのか。🎥 動画はこちら→ https://www.youtube.com/watch?v=Z_-C2BS2ghA",
+  "image": "daily-content/2026-08-05.png",
+  "source_url": "https://www.youtube.com/watch?v=Z_-C2BS2ghA",
+  "infographic_data": {
+    "template": "stat",
+    "title": "2.8T Model",
+    "conclusion": "6倍の高速化を実現",
+    "key_stat": "2.8兆パラメータ",
+    "points": [
+      "① Transformerアーキテクチャ：言語処理の基礎",
+      "② 高速化の要因：6倍のパフォーマンス向上",
+      "③ 重要性：AIの効率化と進化",
+      "④ 規模感：過去のモデルと比較した場合",
+      "⑤ 背景：AI研究の競争と進化"
+    ]
+  },
+  "status": "ready"
+}
