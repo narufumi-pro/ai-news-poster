@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-06",
+  "caption": "🔥 海外ではChatGPT、Gemini、Claude等のKI-Promptsを最適化するためのテクニックが話題！日本語でわかりやすく解説します。Digitale Profisの動画では、より良いKI回答を得るためのハックが紹介されています。 🎥 動画はこちら→ https://www.youtube.com/watch?v=zwLWHE0Sr3s",
+  "image": "daily-content/2026-08-06.png",
+  "source_url": "https://www.youtube.com/watch?v=zwLWHE0Sr3s",
+  "infographic_data": {
+    "template": "list",
+    "title": "KI-Prompts最適化",
+    "conclusion": "KI回答を最適化しよう",
+    "points": [
+      "KI-Promptsとは：会話AIとの通信方法",
+      "最適化のメリット：より良い回答を得る",
+      "言語入力の重要性：正確な回答を得る",
+      "ChatGPT、Gemini、Claudeへの応用方法",
+      "KI-Promptsの将来性：AIとのコミュニケーションを向上させる"
+    ]
+  },
+  "status": "ready"
+}
