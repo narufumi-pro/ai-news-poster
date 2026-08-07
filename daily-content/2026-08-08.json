@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-08",
+  "caption": "🎥 動画はこちら→ https://www.youtube.com/watch?v=FiM83KQ_EcE",
+  "image": "daily-content/2026-08-08.png",
+  "source_url": "https://www.youtube.com/watch?v=FiM83KQ_EcE",
+  "infographic_data": {
+    "template": "list",
+    "title": "AIがもたらす未来",
+    "conclusion": "お金の価値が変わる",
+    "points": [
+      "仕事を失うことよりもお金の価値が低下",
+      "エロン・マスクの財産譲渡宣言",
+      "AIが人間の生活を変える",
+      "新しい社会システムの構築",
+      "お金の重要性が低下する未来"
+    ]
+  },
+  "status": "ready"
+}
