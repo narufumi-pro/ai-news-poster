@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-07",
+  "caption": "🎥 動画はこちら→ https://www.youtube.com/watch?v=TkO98r1JA3g",
+  "image": "daily-content/2026-08-07.png",
+  "source_url": "https://www.youtube.com/watch?v=TkO98r1JA3g",
+  "infographic_data": {
+    "template": "list",
+    "title": "2026夏AIアップデート",
+    "conclusion": "新世代AIの到来",
+    "points": [
+      "OpenAI：GPT-5.6",
+      "Anthropic：Claude 5ファミリー",
+      "Google：次世代モデル",
+      "夏にロールアウト予定",
+      "AIの進化が加速"
+    ]
+  },
+  "status": "ready"
+}
