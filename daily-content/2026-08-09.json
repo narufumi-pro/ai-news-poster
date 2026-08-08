@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-09",
+  "caption": "🚨 AIがロボットを設計！26秒で歩行可能なロボットが完成🤖 日本語でわかりやすく解説します。海外ではAIがロボット設計に革新をもたらしています。🎥 動画はこちら→ https://www.youtube.com/watch?v=JJqv4lGA7Mg",
+  "image": "daily-content/2026-08-09.png",
+  "source_url": "https://www.youtube.com/watch?v=JJqv4lGA7Mg",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIロボット設計",
+    "conclusion": "AIの設計能力が進化",
+    "key_stat": "26秒",
+    "points": [
+      "①AI：ロボット設計を自動化",
+      "②ロボット：歩行可能な設計",
+      "③重要性：設計時間の短縮",
+      "④規模感：従来の設計と比較して大幅短縮",
+      "⑤背景：AI技術の進歩"
+    ]
+  },
+  "status": "ready"
+}
