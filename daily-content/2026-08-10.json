@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-10",
+  "caption": "🔥 スタンフォードの科学者がAIを使って新型ウイルスを生成！日本語でわかりやすく解説します。海外ではAIがウイルス生成に使われることが話題になっています。🎥 動画はこちら→ https://www.youtube.com/watch?v=vgz4C6UBfNo",
+  "image": "daily-content/2026-08-10.png",
+  "source_url": "https://www.youtube.com/watch?v=vgz4C6UBfNo",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIウイルス生成",
+    "conclusion": "AIの進化が新型ウイルスを生み出す",
+    "key_stat": "AI生成ウイルス",
+    "points": [
+      "①AI：人工知能の定義",
+      "②ウイルス生成：AIの主要機能",
+      "③重要性：AIウイルスが世界に与える影響",
+      "④規模：数十種類のウイルスが生成",
+      "⑤背景：AI技術の進化"
+    ]
+  },
+  "status": "ready"
+}
