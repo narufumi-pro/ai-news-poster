@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-11",
+  "caption": "🔥 AIの価格戦争が加熱しています！日本語でわかりやすく解説します。海外では、2023年3月に1ドルで20,000語のAI処理が可能でしたが、3年後には6.1百万語の処理が可能になっています。🎥 動画はこちら→ https://www.youtube.com/watch?v=PBmn1BpePLA",
+  "image": "daily-content/2026-08-11.png",
+  "source_url": "https://www.youtube.com/watch?v=PBmn1BpePLA",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI価格戦争",
+    "conclusion": "価格大幅下落",
+    "key_stat": "6.1百万語/1ドル",
+    "points": [
+      "①AI価格：大幅下落",
+      "②3年での変化：20000語→610万語",
+      "③なぜ重要か：AI利用の拡大",
+      "④規模感：1ドルで何ができるか",
+      "⑤背景：技術革新と競争"
+    ]
+  },
+  "status": "ready"
+}
