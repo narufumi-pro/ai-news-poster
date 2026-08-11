@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-12",
+  "caption": "⚡ Googleの量子AIが思わぬ事実を確認！日本語でわかりやすく解説します。海外では、量子コンピューティングと人工知能が物理学を変える転換点に達しています。 🎥 動画はこちら→ https://www.youtube.com/watch?v=2OAWcUHeHdw",
+  "image": "daily-content/2026-08-12.png",
+  "source_url": "https://www.youtube.com/watch?v=2OAWcUHeHdw",
+  "infographic_data": {
+    "template": "stat",
+    "title": "量子AIの進化",
+    "conclusion": "量子AIが新たな発見を起こす",
+    "key_stat": "量子AIが物理学を変える",
+    "points": [
+      "①量子AI：新しいコンピューティング方式",
+      "②量子AIの能力：複雑な計算を高速化",
+      "③重要性：新しい科学的発見を促す",
+      "④規模：急速に進化している技術",
+      "⑤将来：人類を変える可能性"
+    ]
+  },
+  "status": "ready"
+}
