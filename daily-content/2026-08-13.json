@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-13",
+  "caption": "🔥 AIチップは新時代に突入です！日本語でわかりやすく解説します。海外では、AI業界は新たなボトルネックに直面しています。那もともとAIチップの高速化だけが問題ではなかったのです。🎥 動画はこちら→ https://www.youtube.com/watch?v=KZmwszTnHaI",
+  "image": "daily-content/2026-08-13.png",
+  "source_url": "https://www.youtube.com/watch?v=KZmwszTnHaI",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIチップの進化",
+    "conclusion": "AIの未来を拓く",
+    "key_stat": "新しいボトルネック",
+    "points": [
+      "①AIチップとは：高速計算装置",
+      "②機能：ディープラーニングの高速化",
+      "③重要性：AIの進化を加速する",
+      "④規模感：数百万のニューロンを超える",
+      "⑤背景：AI業界の成長と進化"
+    ]
+  },
+  "status": "ready"
+}
