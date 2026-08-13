@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-14",
+  "caption": "🚨 ChatGPT 無料版の大型アップデートが発表された！日本語でわかりやすく解説します。海外では GPT5.6 Sol、Claude、Gemini と比較されています。 🎥 動画はこちら→ https://www.youtube.com/watch?v=2J7NCgDnhuY",
+  "image": "daily-content/2026-08-14.png",
+  "source_url": "https://www.youtube.com/watch?v=2J7NCgDnhuY",
+  "infographic_data": {
+    "template": "comparison",
+    "title": "ChatGPT 無料版アップデート",
+    "conclusion": "大型アップデートで機能が大幅に向上",
+    "left_label": "ChatGPT",
+    "right_label": "GPT5.6 Sol",
+    "left_points": [
+      "無料版でも高性能",
+      "会話機能強化",
+      "知識データ更新"
+    ],
+    "right_points": [
+      "高精度ながら有料",
+      "学習データ量大",
+      "特化した分野あり"
+    ]
+  },
+  "status": "ready"
+}
