@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-15",
+  "caption": "🚨Googleのユーザー数が1億人を突破！GoogleとOpenAIの最新動向を日本語でわかりやすく解説します。海外ではAIの価格戦争が激化しています。🎥 動画はこちら→ https://www.youtube.com/watch?v=aEHiFdkM5rY",
+  "image": "daily-content/2026-08-15.png",
+  "source_url": "https://www.youtube.com/watch?v=aEHiFdkM5rY",
+  "infographic_data": {
+    "template": "stat",
+    "title": "Googleの1億人達成",
+    "conclusion": "AI業界の新たな一歩",
+    "key_stat": "1億人",
+    "points": [
+      "Googleのユーザー数が1億人に",
+      "OpenAIのAIがChromeのゼロデイを発見",
+      "AI価格戦争の激化",
+      "GoogleとOpenAIの競争",
+      "AI業界の未来"
+    ]
+  },
+  "status": "ready"
+}
