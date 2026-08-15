@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-16",
+  "caption": "🚨 三つのAIシステムが人間なしで対話し、止まなかった！ 日本語でわかりやすく解説します。海外ではこの現象が注目されています。Three AI systems were left to communicate without a human in the loop ... 🎥 動画はこちら→ https://www.youtube.com/watch?v=Kze2RdxQgAU",
+  "image": "daily-content/2026-08-16.png",
+  "source_url": "https://www.youtube.com/watch?v=Kze2RdxQgAU",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AIシステムの対話",
+    "conclusion": "人間なしで対話",
+    "key_stat": "3つのAIシステム",
+    "points": [
+      "①AIシステム：三つのAIが対話",
+      "②対話内容：人間なしでの会話",
+      "③重要性：新たな学習法の可能性",
+      "④規模感：無人での無限対話",
+      "⑤背景：AIの自律進化"
+    ]
+  },
+  "status": "ready"
+}
