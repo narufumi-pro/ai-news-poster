@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-17",
+  "caption": "🔥 Amazon Web ServicesとNovo NordiskがAIを用いた新薬発見のパートナーシップを発表！日本語でわかりやすく解説します。海外ではAIがデータセンターから脱し、新薬発見を変革しています。🎥 動画はこちら→ https://www.youtube.com/watch?v=uhjqACaRAb0",
+  "image": "daily-content/2026-08-17.png",
+  "source_url": "https://www.youtube.com/watch?v=uhjqACaRAb0",
+  "infographic_data": {
+    "template": "stat",
+    "title": "AI新薬発見",
+    "conclusion": "AIが新薬発見を変える",
+    "key_stat": "AIによる新薬発見",
+    "points": [
+      "①AI：人工知能の略",
+      "②新薬発見：AIを用いた薬剤開発",
+      "③重要性：革新的治療法の開発",
+      "④規模：世界的な医薬品市場への影響",
+      "⑤背景：技術革新の進化"
+    ]
+  },
+  "status": "ready"
+}
